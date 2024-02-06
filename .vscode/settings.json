@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages",
+        "/home/kelvin/testbot/install/robot1/lib/python3.10/site-packages",
+        "/home/kelvin/percepto_planner/install/percepto_planner/lib/python3.10/site-packages",
+        "/home/kelvin/percepto_planner/install/pplanner_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages",
+        "/home/kelvin/testbot/install/robot1/lib/python3.10/site-packages",
+        "/home/kelvin/percepto_planner/install/percepto_planner/lib/python3.10/site-packages",
+        "/home/kelvin/percepto_planner/install/pplanner_interfaces/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

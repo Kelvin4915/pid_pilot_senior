@@ -1,0 +1,37 @@
+[0.506s] Invoking command in '/home/kelvin/pid_pilot_senior/src/pid_pilot_senior': PYTHONPATH=/home/kelvin/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pid_pilot_senior build --build-base /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build install --record /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/install.log --single-version-externally-managed
+[0.644s] running egg_info
+[0.644s] creating ../../build/pid_pilot_senior/pid_pilot_senior.egg-info
+[0.644s] writing ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/PKG-INFO
+[0.644s] writing dependency_links to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/dependency_links.txt
+[0.644s] writing entry points to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/entry_points.txt
+[0.645s] writing requirements to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/requires.txt
+[0.645s] writing top-level names to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/top_level.txt
+[0.645s] writing manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'
+[0.645s] reading manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'
+[0.646s] writing manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'
+[0.646s] running build
+[0.646s] running build_py
+[0.646s] creating /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build
+[0.646s] creating /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib
+[0.646s] creating /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior
+[0.646s] copying pid_pilot_senior/pid_pilot_senior.py -> /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior
+[0.646s] copying pid_pilot_senior/__init__.py -> /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior
+[0.646s] running install
+[0.646s] running install_lib
+[0.647s] creating /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[0.647s] copying /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/pid_pilot_senior.py -> /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[0.647s] copying /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/__init__.py -> /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[0.647s] byte-compiling /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/pid_pilot_senior.py to pid_pilot_senior.cpython-310.pyc
+[0.647s] byte-compiling /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/__init__.py to __init__.cpython-310.pyc
+[0.647s] running install_data
+[0.647s] creating /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/share/ament_index
+[0.648s] creating /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index
+[0.648s] creating /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index/packages
+[0.648s] copying resource/pid_pilot_senior -> /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index/packages
+[0.648s] copying package.xml -> /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/share/pid_pilot_senior
+[0.648s] running install_egg_info
+[0.648s] Copying ../../build/pid_pilot_senior/pid_pilot_senior.egg-info to /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior-0.0.0-py3.10.egg-info
+[0.649s] running install_scripts
+[0.661s] Installing pid_pilot_senior script to /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/pid_pilot_senior
+[0.661s] writing list of installed files to '/home/kelvin/pid_pilot_senior/build/pid_pilot_senior/install.log'
+[0.674s] Invoked command in '/home/kelvin/pid_pilot_senior/src/pid_pilot_senior' returned '0': PYTHONPATH=/home/kelvin/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pid_pilot_senior build --build-base /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build install --record /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/install.log --single-version-externally-managed
