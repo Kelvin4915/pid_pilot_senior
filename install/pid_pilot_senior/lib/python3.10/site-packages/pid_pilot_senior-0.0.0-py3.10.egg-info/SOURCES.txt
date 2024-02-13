@@ -10,6 +10,8 @@ setup.py
 ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/zip-safe
 pid_pilot_senior/__init__.py
 pid_pilot_senior/pid_pilot_senior.py
+pid_pilot_senior/test.py
+pid_pilot_senior/test2.py
 resource/pid_pilot_senior
 test/test_copyright.py
 test/test_flake8.py

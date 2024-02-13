@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/PKG-INFO
+writing dependency_links to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/dependency_links.txt
+writing entry points to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/entry_points.txt
+writing requirements to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/requires.txt
+writing top-level names to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/top_level.txt
+reading manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'
+writing manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'
+running build
+running build_py
+copying pid_pilot_senior/pid_pilot_senior.py -> /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior
+copying pid_pilot_senior/test.py -> /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior
+running install
+running install_lib
+copying /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/pid_pilot_senior.py -> /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+copying /home/kelvin/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test.py -> /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+byte-compiling /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/pid_pilot_senior.py to pid_pilot_senior.cpython-310.pyc
+byte-compiling /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test.py to test.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/pid_pilot_senior/pid_pilot_senior.egg-info to /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pid_pilot_senior script to /home/kelvin/pid_pilot_senior/install/pid_pilot_senior/lib/pid_pilot_senior
+writing list of installed files to '/home/kelvin/pid_pilot_senior/build/pid_pilot_senior/install.log'
