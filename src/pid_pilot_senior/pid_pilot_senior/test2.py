@@ -11,6 +11,7 @@ class PidPilotSenior(Node):
         super().__init__("pid_pilot_senior") 
         self.get_logger().info("Node has started")
         # self.path_data = self.create_subscription(PathGridset, "path", self.callback_pid, 10)
+
         self.path_traverse = PathGridset()
         self.path_pid_temp = []
         self.path_pid = [[[0,0],[1,1]]]
@@ -24,25 +25,28 @@ class PidPilotSenior(Node):
         self.path_traverse = [self.temp]
         self.time_interval = 5
 
+        pid_thread = threading.Thread(target = self.pid_function, args = (self.path_pid))
+        pid_thread.start()
+
 
     def pid_function(self, path_pid):
         
         while(1):
             if self.pid_function_local_path != path_pid[0]:
-                self.get_logger().info("INNNNNNNNNNNNNNNN")
-                self.get_logger().info(str(path_pid))
+                self.get_logger().info("in ")
+                self.get_logger().info(str(path_pid) + " path_pid")
+                new_path_pid = path_pid[0]
+                self.get_logger().info(str(new_path_pid)+ " new_path_pid")
+
                 self.get_logger().info(str(self.pid_function_local_path))
 
                 time.sleep(0.1)
 
-
-
 def main(args=None):
     rclpy.init(args=args)
     node = PidPilotSenior()
-    rand = [[[0,0],[1,1]]]
-    pid_thread = threading.Thread(target = node.pid_function, args = (node.path_pid))
-    pid_thread.start()
+    # pid_thread = threading.Thread(target = node.pid_function, args = (node.path_pid))
+    # pid_thread.start()
     rclpy.spin(node)
     rclpy.shutdown()
  
