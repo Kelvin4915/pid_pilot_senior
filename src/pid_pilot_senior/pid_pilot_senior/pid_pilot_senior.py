@@ -4,6 +4,7 @@ from rclpy.node import Node
 from pplanner_interfaces.msg import PathGrid
 from pplanner_interfaces.msg import PathGridset
 import threading
+import math
 
 class PidPilotSenior(Node):
     def __init__(self):
@@ -23,6 +24,16 @@ class PidPilotSenior(Node):
         self.pid_function_local_path_reference = []
         self.path_traverse = [self.temp]
         self.time_interval = 5
+
+        self.Kp = 0
+        self.Ki = 0
+        self.Kd = 0
+        self.pid_reference_counter = 0
+        self.instantaneous_position_data = [[0,0],[0,0]]
+        self.instantaneous_velocity_data = [[0,0],[0,0]]
+        self.instantaneous_acceleration_data = [[0,0],[0,0]]
+        self.corrected_velocity = [0,0]
+
         pid_thread = threading.Thread(target = self.pid_function, args = (self.path_pid))
         pid_thread.start()
 
@@ -45,14 +56,19 @@ class PidPilotSenior(Node):
         
         while(1):
             if self.pid_function_local_path_reference != path_pid:
+                self.get_logger().info("Inside Calculation Loop")
+                self.pid_reference_counter = 1
+
                 self.get_logger().info(str(self.pid_function_local_path) + " 1 pid_function_local_path")
                 self.get_logger().info(str(len(path_pid)) + " length path_pid")
+                
                 self.pid_function_local_path_reference = path_pid[:]
                 self.pid_function_local_path = path_pid[:]
                 position = path_pid[:]
-
-                self.pid_function_local_path.append(self.pid_function_local_path[len(self.pid_function_local_path) - 1])
-                self.pid_function_local_path.append(self.pid_function_local_path[len(self.pid_function_local_path) - 1])
+                temp_init_pos = self.pid_function_local_path[0]
+                self.pid_function_local_path = [temp_init_pos] + self.pid_function_local_path
+                # self.pid_function_local_path.append(self.pid_function_local_path[len(self.pid_function_local_path) - 1])
+                # self.pid_function_local_path.append(self.pid_function_local_path[len(self.pid_function_local_path) - 1])
 
                 self.get_logger().info(str(self.pid_function_local_path) + " 2 pid_function_local_path")
                 self.get_logger().info(str(len(self.pid_function_local_path)) + " length pid_function_local_path")
@@ -60,12 +76,13 @@ class PidPilotSenior(Node):
                 temp_velocity = [[(self.pid_function_local_path[i+1][0] - self.pid_function_local_path[i][0]) / self.time_interval, 
                     (self.pid_function_local_path[i+1][1] - self.pid_function_local_path[i][1]) / self.time_interval] for i in range(0, len(self.pid_function_local_path)-1)]
                 
-                velocity = temp_velocity[:-1]
+                velocity = temp_velocity
+                temp_velocity = [[0,0]] + temp_velocity
 
                 acceleration = [[(temp_velocity[i+1][0] - temp_velocity[i][0]) / self.time_interval,
                      (temp_velocity[i+1][1] - temp_velocity[i][1]) / self.time_interval] for i in range(0, len(temp_velocity)-1)]
                 
-                self.get_logger().info(str(len(path_pid)) + " length path_pid")
+                # self.get_logger().info(str(len(path_pid)) + " length path_pid")
 
                 self.get_logger().info(str(position) + " position")
                 self.get_logger().info(str(len(position)) + " length position")
@@ -75,6 +92,32 @@ class PidPilotSenior(Node):
 
                 self.get_logger().info(str(acceleration) + " acceleration")
                 self.get_logger().info(str(len(acceleration)) + " length acceleration")
+
+            if self.pid_function_local_path_reference == path_pid:
+                self.get_logger().info("Inside Controller Loop")
+                if self.pid_reference_counter == 1:    
+                    self.instantaneous_position_data = [actual_position,actual_position] 
+
+                self.instantaneous_position_data[0] = self.instantaneous_position_data[1]
+                self.instantaneous_position_data[1] = actual_position
+
+                self.instantaneous_velocity_data[0] = self.instantaneous_velocity_data[1]
+                self.instantaneous_velocity_data[1] = (self.instantaneous_position_data[1] - self.instantaneous_position_data[0])/self.time_interval
+
+                self.instantaneous_acceleration_data[0] = self.instantaneous_acceleration_data[1]
+                self.instantaneous_acceleration_data[1] = (self.instantaneous_velocity_data[1] - self.instantaneous_velocity_data[0])/self.time_interval
+            
+                Ep = position[self.pid_reference_counter] - self.instantaneous_position_data[1]
+                Ev = velocity[self.pid_reference_counter] - self.instantaneous_velocity_data[1]
+                Ea = acceleration[self.pid_reference_counter] - self.instantaneous_acceleration_data[1]
+
+                PID_velocity = Ep*self.Ki + Ev*self.Kp + Ea*self.Kd
+                self.corrected_velocity = self.corrected_velocity + PID_velocity
+
+
+                self.pid_reference_counter = self.pid_reference_counter + 1
+
+
 
             # self.get_logger().info("position" + str(len(self.pid_function_local_path)))
             # self.get_logger().info("velocity" + str(len(velocity)))
