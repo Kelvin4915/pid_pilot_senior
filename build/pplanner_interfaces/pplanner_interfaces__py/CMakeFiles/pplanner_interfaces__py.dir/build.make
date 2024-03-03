@@ -71,9 +71,13 @@ pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/
 pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c
 pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_path_grid.py
 pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_path_gridset.py
+pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_data.py
+pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset.py
 pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/__init__.py
 pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.c
 pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c
+pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c
+pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c
 
 rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -90,6 +94,8 @@ rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesup
 rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pplanner_interfaces/msg/PathGrid.idl
 rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl
+rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl
+rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/pplanner_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -105,6 +111,12 @@ rosidl_generator_py/pplanner_interfaces/msg/_path_grid.py: rosidl_generator_py/p
 rosidl_generator_py/pplanner_interfaces/msg/_path_gridset.py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pplanner_interfaces/msg/_path_gridset.py
 
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data.py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pplanner_interfaces/msg/_aruco_data.py
+
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset.py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset.py
+
 rosidl_generator_py/pplanner_interfaces/msg/__init__.py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pplanner_interfaces/msg/__init__.py
 
@@ -114,11 +126,21 @@ rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.c: rosidl_generator_py/
 rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c
 
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c
+
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c
+
 pplanner_interfaces__py: pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py
 pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c
 pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/__init__.py
+pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_data.py
+pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c
+pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset.py
+pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c
 pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_path_grid.py
 pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.c
 pplanner_interfaces__py: rosidl_generator_py/pplanner_interfaces/msg/_path_gridset.py

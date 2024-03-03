@@ -4,7 +4,9 @@
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource",
   "idl_tuples": [
     "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGrid.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGridset.idl"
+    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGridset.idl",
+    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoData.idl",
+    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoDataset.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
@@ -16,6 +18,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
     "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGrid.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl"
+    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl",
+    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl",
+    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl"
   ]
 }

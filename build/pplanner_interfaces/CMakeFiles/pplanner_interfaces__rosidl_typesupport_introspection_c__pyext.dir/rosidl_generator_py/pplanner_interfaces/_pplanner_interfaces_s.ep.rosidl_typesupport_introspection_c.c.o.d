@@ -207,4 +207,12 @@ CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
  /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.h \
  /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__type_support.h \
  /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__struct.h \
- /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.h
+ /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.h \
+ /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__type_support.h \
+ /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.h \
+ /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.h \
+ /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__struct.h \
+ /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.h

@@ -248,8 +248,26 @@ CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_
   rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.h \
   rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__type_support.h \
   rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__struct.h \
-  rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.h
+  rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.h \
+  rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__type_support.h \
+  rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__struct.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+  rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.h \
+  rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.h \
+  rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__struct.h \
+  rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.h
 
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.h:
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__struct.h:
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__type_support.h:
 
 rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__type_support.h:
 
@@ -284,6 +302,8 @@ rosidl_generator_c/pplanner_interfaces/msg/rosidl_generator_c__visibility_contro
 /usr/include/python3.10/context.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
@@ -389,6 +409,8 @@ rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
@@ -470,6 +492,8 @@ rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.h:
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 

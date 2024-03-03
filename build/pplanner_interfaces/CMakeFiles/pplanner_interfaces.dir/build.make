@@ -68,6 +68,8 @@ include CMakeFiles/pplanner_interfaces.dir/progress.make
 
 CMakeFiles/pplanner_interfaces: /home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/PathGrid.msg
 CMakeFiles/pplanner_interfaces: /home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/PathGridset.msg
+CMakeFiles/pplanner_interfaces: /home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/ArucoData.msg
+CMakeFiles/pplanner_interfaces: /home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/ArucoDataset.msg
 
 pplanner_interfaces: CMakeFiles/pplanner_interfaces
 pplanner_interfaces: CMakeFiles/pplanner_interfaces.dir/build.make

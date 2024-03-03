@@ -74,6 +74,14 @@ CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/ms
 CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_gridset__builder.hpp
 CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_gridset__struct.hpp
 CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_gridset__traits.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/aruco_data.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__builder.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__struct.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__traits.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/aruco_dataset.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp
+CMakeFiles/pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp
 
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,8 +100,10 @@ rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplanner_interfaces/msg/PathGrid.idl
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl
+rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl
+rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_cpp__arguments.json
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_grid__builder.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_grid__builder.hpp
@@ -116,7 +126,39 @@ rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_gridset__struct.hpp: ro
 rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_gridset__traits.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_gridset__traits.hpp
 
+rosidl_generator_cpp/pplanner_interfaces/msg/aruco_data.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/aruco_data.hpp
+
+rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__builder.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__builder.hpp
+
+rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__struct.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__struct.hpp
+
+rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__traits.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__traits.hpp
+
+rosidl_generator_cpp/pplanner_interfaces/msg/aruco_dataset.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/aruco_dataset.hpp
+
+rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp
+
+rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp
+
+rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp
+
 pplanner_interfaces__cpp: CMakeFiles/pplanner_interfaces__cpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/aruco_data.hpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/aruco_dataset.hpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__builder.hpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__struct.hpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_data__traits.hpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp
+pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp
 pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_grid__builder.hpp
 pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_grid__struct.hpp
 pplanner_interfaces__cpp: rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_grid__traits.hpp

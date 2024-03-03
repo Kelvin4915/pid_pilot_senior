@@ -1,0 +1,199 @@
+[0.200s] Invoking command in '/home/kelvin/pid_pilot_senior/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --build /home/kelvin/pid_pilot_senior/build/pplanner_interfaces -- -j20 -l20
+[0.226s] [  1%] Built target pplanner_interfaces__cpp
+[0.226s] [ 12%] Built target pplanner_interfaces__rosidl_generator_c
+[0.234s] [ 12%] Built target ament_cmake_python_copy_pplanner_interfaces
+[0.239s] [ 43%] Built target pplanner_interfaces__rosidl_typesupport_cpp
+[0.239s] [ 45%] Built target pplanner_interfaces__rosidl_typesupport_introspection_cpp
+[0.239s] [ 45%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.239s] [ 56%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c
+[0.243s] [ 74%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c
+[0.243s] [ 78%] Built target pplanner_interfaces__rosidl_typesupport_c
+[0.254s] [ 78%] Built target pplanner_interfaces
+[0.266s] [ 80%] Built target pplanner_interfaces__py
+[0.279s] [ 89%] Built target pplanner_interfaces__rosidl_generator_py
+[0.291s] [ 92%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.291s] [100%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.291s] [100%] Built target pplanner_interfaces__rosidl_typesupport_c__pyext
+[0.379s] running egg_info
+[0.380s] writing pplanner_interfaces.egg-info/PKG-INFO
+[0.380s] writing dependency_links to pplanner_interfaces.egg-info/dependency_links.txt
+[0.380s] writing top-level names to pplanner_interfaces.egg-info/top_level.txt
+[0.382s] reading manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[0.382s] writing manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[0.398s] [100%] Built target ament_cmake_python_build_pplanner_interfaces_egg
+[0.405s] Invoked command in '/home/kelvin/pid_pilot_senior/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --build /home/kelvin/pid_pilot_senior/build/pplanner_interfaces -- -j20 -l20
+[0.464s] Invoking command in '/home/kelvin/pid_pilot_senior/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --install /home/kelvin/pid_pilot_senior/build/pplanner_interfaces
+[0.468s] -- Install configuration: ""
+[0.468s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/rosidl_interfaces/pplanner_interfaces
+[0.468s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[0.468s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_generator_c__visibility_control.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.c
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.c
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.c
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.c
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.h
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.sh
+[0.469s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.dsv
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_c.so
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.c
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.c
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.c
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_c.h
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_c.so
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_c.so
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.hpp
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.hpp
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.hpp
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.hpp
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[0.470s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__builder.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__traits.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__traits.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__traits.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__builder.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__builder.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/dds_fastrtps
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.cpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.cpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_cpp.hpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_cpp.so
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.sh
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.dsv
+[0.471s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info
+[0.471s] -- Installing: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[0.471s] -- Installing: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[0.472s] -- Installing: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.472s] -- Installing: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset_s.c
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset.py
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data.py
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid_s.c
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data_s.c
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/__init__.py
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset.py
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset_s.c
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid.py
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/__init__.py
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.472s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/libpplanner_interfaces__rosidl_generator_py.so
+[0.490s] Listing '/home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces'...
+[0.490s] Listing '/home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg'...
+[0.493s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.493s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.493s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.493s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_py.so
+[0.493s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.idl
+[0.493s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.idl
+[0.493s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.idl
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.idl
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.msg
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.msg
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.msg
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.msg
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/package_run_dependencies/pplanner_interfaces
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/parent_prefix_path/pplanner_interfaces
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.sh
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.dsv
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.sh
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.dsv
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.bash
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.sh
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.zsh
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.dsv
+[0.494s] -- Installing: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/package.dsv
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/packages/pplanner_interfaces
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport-noconfig.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cppExport.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[0.494s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake-extras.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig-version.cmake
+[0.495s] -- Up-to-date: /home/kelvin/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/package.xml
+[0.496s] Invoked command in '/home/kelvin/pid_pilot_senior/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --install /home/kelvin/pid_pilot_senior/build/pplanner_interfaces

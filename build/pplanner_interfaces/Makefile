@@ -405,6 +405,54 @@ pplanner_interfaces__py/fast:
 	$(MAKE) $(MAKESILENT) -f pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py.dir/build.make pplanner_interfaces__py/CMakeFiles/pplanner_interfaces__py.dir/build
 .PHONY : pplanner_interfaces__py/fast
 
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.o: rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.o
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.o
+
+# target to build an object file
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.o
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.o
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.i: rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.i
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.i
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.i
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.s: rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.s
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.s
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.s
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.o: rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.o
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.o
+
+# target to build an object file
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.o
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.o
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.i: rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.i
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.i
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.i
+
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.s: rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.s
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.s
+.PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.s
+
 rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.o: rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.c.o
 .PHONY : rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.o
 
@@ -525,6 +573,54 @@ rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesup
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.o: rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.o
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.o
+
+# target to build an object file
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.o
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.o
+
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.i: rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.i
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.i
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.i
+
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.s: rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.s
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.s
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.s
+
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.o: rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.o
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.o
+
+# target to build an object file
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.o
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.o
+
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.i: rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.i
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.i
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.i
+
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.s: rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.s
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.s
+.PHONY : rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.s
+
 rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.o: rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.c.o
 .PHONY : rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.o
 
@@ -572,6 +668,54 @@ rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.s: rosidl_generator_
 rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c.s
 .PHONY : rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c.s
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.o: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.i: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.i
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.s: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.s
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.o: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.i: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.s: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s
 
 rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.o: rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.o
@@ -621,6 +765,54 @@ rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.s
 
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.o: rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.o
+
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.i: rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.i
+
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.s: rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.s
+
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.o: rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o
+
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.i: rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i
+
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.s: rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s
+
 rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.o: rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.o
 
@@ -668,6 +860,54 @@ rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.s: ros
 rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.o: rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.i: rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.s: rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.s
+
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.o: rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.i: rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.s: rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.o: rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.o
@@ -717,6 +957,54 @@ rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.o: rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.i: rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.s: rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.o: rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.i: rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.s: rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.o: rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.o
 
@@ -765,6 +1053,54 @@ rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_gridset__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_gridset__type_support.cpp.s
 
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.o: rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.o
+
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.i: rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.i
+
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.s: rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.s
+
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.o: rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.o
+
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.i: rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.i
+
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.s: rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.s
+
 rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.o: rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.o
 
@@ -812,6 +1148,54 @@ rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__
 rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.o: rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.i: rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.s: rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.s
+
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.o: rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.i: rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.s: rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.o: rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.o
@@ -892,6 +1276,12 @@ help:
 	@echo "... pplanner_interfaces__rosidl_typesupport_introspection_c"
 	@echo "... pplanner_interfaces__rosidl_typesupport_introspection_c__pyext"
 	@echo "... pplanner_interfaces__rosidl_typesupport_introspection_cpp"
+	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.o"
+	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.i"
+	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.s"
+	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.o"
+	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.i"
+	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.s"
 	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.o"
 	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.i"
 	@echo "... rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.s"
@@ -907,42 +1297,84 @@ help:
 	@echo "... rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.o"
+	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.i"
+	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.s"
+	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.o"
+	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.i"
+	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.s"
 	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.o"
 	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.i"
 	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.s"
 	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.o"
 	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.i"
 	@echo "... rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.s"
+	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.o"
+	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.i"
+	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.s"
+	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.o"
+	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.i"
+	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.s"
 	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.o"
 	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.i"
 	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.s"
 	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.o"
 	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.i"
 	@echo "... rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.s"
+	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.o"
+	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.i"
+	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.s"
+	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.o"
+	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.i"
+	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.s"
 	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.o"
 	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.i"
 	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.s"
 	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.o"
 	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.i"
 	@echo "... rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_gridset__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_gridset__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_gridset__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.s"

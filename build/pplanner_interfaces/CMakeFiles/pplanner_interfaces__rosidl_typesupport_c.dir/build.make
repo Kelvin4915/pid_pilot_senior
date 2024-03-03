@@ -77,11 +77,19 @@ rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp: /opt/r
 rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp: /opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em
 rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp: rosidl_adapter/pplanner_interfaces/msg/PathGrid.idl
 rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp: rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl
+rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp: rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl
+rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp: rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
-	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
+	/usr/bin/python3 /opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
 
 rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp: rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp: rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp
+
+rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp: rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp
 
 CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp.o: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp.o: rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp
@@ -111,23 +119,55 @@ CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp -o CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.s
 
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o -MF CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o.d -o CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o -c /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp
+
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp > CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.i
+
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp -o CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.s
+
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o -MF CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o.d -o CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o -c /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp
+
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp > CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.i
+
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp -o CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.s
+
 # Object files for target pplanner_interfaces__rosidl_typesupport_c
 pplanner_interfaces__rosidl_typesupport_c_OBJECTS = \
 "CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp.o" \
-"CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.o"
+"CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.o" \
+"CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o" \
+"CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o"
 
 # External object files for target pplanner_interfaces__rosidl_typesupport_c
 pplanner_interfaces__rosidl_typesupport_c_EXTERNAL_OBJECTS =
 
 libpplanner_interfaces__rosidl_typesupport_c.so: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp.o
 libpplanner_interfaces__rosidl_typesupport_c.so: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.o
+libpplanner_interfaces__rosidl_typesupport_c.so: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o
+libpplanner_interfaces__rosidl_typesupport_c.so: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o
 libpplanner_interfaces__rosidl_typesupport_c.so: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/build.make
 libpplanner_interfaces__rosidl_typesupport_c.so: libpplanner_interfaces__rosidl_generator_c.so
 libpplanner_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_typesupport_c.so
 libpplanner_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libpplanner_interfaces__rosidl_typesupport_c.so: /opt/ros/humble/lib/librcutils.so
 libpplanner_interfaces__rosidl_typesupport_c.so: CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libpplanner_interfaces__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libpplanner_interfaces__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +178,8 @@ CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/clean
 
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp
+CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp
 CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp
 CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp
 	cd /home/kelvin/pid_pilot_senior/build/pplanner_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/DependInfo.cmake --color=$(COLOR)

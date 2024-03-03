@@ -258,7 +258,7 @@ endif()
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   execute_process(
         COMMAND
-        "/usr/bin/python3.10" "-m" "compileall"
+        "/usr/bin/python3" "-m" "compileall"
         "/home/kelvin/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces"
       )
 endif()
@@ -364,11 +364,27 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pplanner_interfaces/msg" TYPE FILE FILES "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pplanner_interfaces/msg" TYPE FILE FILES "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pplanner_interfaces/msg" TYPE FILE FILES "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/PathGrid.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pplanner_interfaces/msg" TYPE FILE FILES "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/PathGridset.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pplanner_interfaces/msg" TYPE FILE FILES "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/ArucoData.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pplanner_interfaces/msg" TYPE FILE FILES "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces/msg/ArucoDataset.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

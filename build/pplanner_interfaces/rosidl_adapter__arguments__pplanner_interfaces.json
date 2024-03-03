@@ -2,6 +2,8 @@
   "package_name": "pplanner_interfaces",
   "non_idl_tuples": [
     "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces:msg/PathGrid.msg",
-    "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces:msg/PathGridset.msg"
+    "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces:msg/PathGridset.msg",
+    "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces:msg/ArucoData.msg",
+    "/home/kelvin/pid_pilot_senior/src/pplanner_interfaces:msg/ArucoDataset.msg"
   ]
 }
