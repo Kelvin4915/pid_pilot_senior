@@ -12,20 +12,32 @@ class PidPilotSenior(Node):
     def __init__(self):
         super().__init__("pid_pilot_senior") 
         self.get_logger().info("PidPilotSenior has started")
+
+        #---------------CHANGE ME ACCORDING TO ROBOT ID-------------
+        self.robot_id = 3 
+        #---------------CHANGE ME ACCORDING TO ROBOT ID-------------
+
         self.path_data = self.create_subscription(PathGridset, "path", self.callback_pid_path, 10)
-        # self.path_data = self.create_subscription(ArucoDataset, "robots", self.callback_actual_position, 10)
+        self.path_data = self.create_subscription(ArucoDataset, "robots", self.callback_actual_position, 10)
         self.path_traverse = PathGridset()
         self.path_pid_temp = []
-        self.path_pid = [[0,0],[1,3],[5,2],[5,7],[3,1],[2,5]]
+        # self.path_pid = [[0,0],[1,3],[5,2],[5,7],[3,1],[2,5]]
+        self.path_pid = []
         self.path_pid_reference = PathGridset() 
         self.temp = PathGrid()
         self.temp.row = 0
         self.temp.col = 0
         self.path_pid_reference.path = [self.temp]
+
+        self.all_robots_data = ArucoDataset
         
         self.pid_function_local_path_reference = []
         self.path_traverse = [self.temp]
         self.time_interval = 5
+
+        self.position = []
+        self.velocity = []
+        self.acceleration = []
 
         self.Kp = 0
         self.Ki = 0
@@ -53,6 +65,12 @@ class PidPilotSenior(Node):
 
     def callback_actual_position(self, msg):
         self.get_logger().info("robot data received")
+        self.all_robots_data = msg
+        for i in range(len(self.all_robots_data.dataset)):
+            if self.all_robots_data.dataset[i].id_data == self.robot_id:
+                self.robot_data = [self.all_robots_data.dataset[i].x_data, self.all_robots_data.dataset[i].y_data, self.all_robots_data.dataset[i].orientation_data]
+                self.get_logger().info("robot data: " + str(self.robot_data))
+                break
 
     def pid_function(self):
         
@@ -89,7 +107,7 @@ class PidPilotSenior(Node):
                 
                 temp_final_pos = [self.path_pid[len(self.path_pid) - 1][0], self.path_pid[len(self.path_pid) - 1][1], self.pid_function_local_path[len(self.pid_function_local_path) - 1][2]]
                 self.pid_function_local_path = self.pid_function_local_path + [temp_final_pos]
-                position = self.pid_function_local_path[:]
+                self.position = self.pid_function_local_path[:]
                 self.pid_function_local_path = self.pid_function_local_path + [temp_final_pos]
 
                 # self.pid_function_local_path.append(self.pid_function_local_path[len(self.pid_function_local_path) - 1])
@@ -102,70 +120,72 @@ class PidPilotSenior(Node):
                     (self.pid_function_local_path[i+1][1] - self.pid_function_local_path[i][1]) / self.time_interval,
                     (self.pid_function_local_path[i+1][2] - self.pid_function_local_path[i][2]) / self.time_interval] for i in range(0, len(self.pid_function_local_path)-1)]
                 
-                velocity = temp_velocity
+                self.velocity = temp_velocity
                 temp_velocity = temp_velocity + [[0,0,0]]
 
-                acceleration = [[(temp_velocity[i+1][0] - temp_velocity[i][0]) / self.time_interval,
+                self.acceleration = [[(temp_velocity[i+1][0] - temp_velocity[i][0]) / self.time_interval,
                      (temp_velocity[i+1][1] - temp_velocity[i][1]) / self.time_interval,
                      (temp_velocity[i+1][2] - temp_velocity[i][2]) / self.time_interval] for i in range(0, len(temp_velocity)-1)]
                 
                 # self.get_logger().info(str(len(path_pid)) + " length path_pid")
 
-                self.get_logger().info(str(position) + " position")
-                self.get_logger().info(str(len(position)) + " length position")
+                self.get_logger().info(str(self.position) + " position")
+                self.get_logger().info(str(len(self.position)) + " length position")
 
-                self.get_logger().info(str(velocity) + " velocity")
-                self.get_logger().info(str(len(velocity)) + " length velocity")
+                self.get_logger().info(str(self.velocity) + " velocity")
+                self.get_logger().info(str(len(self.velocity)) + " length velocity")
 
-                self.get_logger().info(str(acceleration) + " acceleration")
-                self.get_logger().info(str(len(acceleration)) + " length acceleration")
+                self.get_logger().info(str(self.acceleration) + " acceleration")
+                self.get_logger().info(str(len(self.acceleration)) + " length acceleration")
 
-            if self.pid_function_local_path_reference == self.path_pid and self.pid_reference_counter <= len(position) - 1:
-                self.get_logger().info("Inside Controller Loop")
-                actual_position = [0,0,0]
-                if self.pid_reference_counter == 0:    
-                    self.instantaneous_position_data = [actual_position,actual_position] 
+            if self.pid_function_local_path_reference == self.path_pid and self.pid_reference_counter <= len(self.position) - 1:
+                if len(self.path_pid) != 0:
 
-                self.instantaneous_position_data[0] = self.instantaneous_position_data[1]
-                self.instantaneous_position_data[1] = actual_position
+                    self.get_logger().info("Inside Controller Loop")
+                    actual_position = [0,0,0]
+                    if self.pid_reference_counter == 0:    
+                        self.instantaneous_position_data = [actual_position,actual_position] 
 
-                self.instantaneous_velocity_data[0] = self.instantaneous_velocity_data[1]
-                self.instantaneous_velocity_data[1] = [(self.instantaneous_position_data[1][0] - self.instantaneous_position_data[0][0])/self.time_interval,
-                                                       (self.instantaneous_position_data[1][1] - self.instantaneous_position_data[0][1])/self.time_interval,
-                                                       (self.instantaneous_position_data[1][2] - self.instantaneous_position_data[0][2])/self.time_interval,]
+                    self.instantaneous_position_data[0] = self.instantaneous_position_data[1]
+                    self.instantaneous_position_data[1] = actual_position
 
-                self.instantaneous_acceleration_data[0] = self.instantaneous_acceleration_data[1]
-                self.instantaneous_acceleration_data[1] = [(self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval,
-                                                           (self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval,
-                                                           (self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval]
-            
-                Ep = [position[self.pid_reference_counter][0] - self.instantaneous_position_data[1][0],
-                      position[self.pid_reference_counter][1] - self.instantaneous_position_data[1][1],
-                      position[self.pid_reference_counter][2] - self.instantaneous_position_data[1][2]]
+                    self.instantaneous_velocity_data[0] = self.instantaneous_velocity_data[1]
+                    self.instantaneous_velocity_data[1] = [(self.instantaneous_position_data[1][0] - self.instantaneous_position_data[0][0])/self.time_interval,
+                                                        (self.instantaneous_position_data[1][1] - self.instantaneous_position_data[0][1])/self.time_interval,
+                                                        (self.instantaneous_position_data[1][2] - self.instantaneous_position_data[0][2])/self.time_interval,]
+
+                    self.instantaneous_acceleration_data[0] = self.instantaneous_acceleration_data[1]
+                    self.instantaneous_acceleration_data[1] = [(self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval,
+                                                            (self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval,
+                                                            (self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval]
                 
-                Ev = [velocity[self.pid_reference_counter][0] - self.instantaneous_velocity_data[1][0],
-                      velocity[self.pid_reference_counter][1] - self.instantaneous_velocity_data[1][1],
-                      velocity[self.pid_reference_counter][2] - self.instantaneous_velocity_data[1][2]]
+                    Ep = [self.position[self.pid_reference_counter][0] - self.instantaneous_position_data[1][0],
+                        self.position[self.pid_reference_counter][1] - self.instantaneous_position_data[1][1],
+                        self.position[self.pid_reference_counter][2] - self.instantaneous_position_data[1][2]]
+                    
+                    Ev = [self.velocity[self.pid_reference_counter][0] - self.instantaneous_velocity_data[1][0],
+                        self.velocity[self.pid_reference_counter][1] - self.instantaneous_velocity_data[1][1],
+                        self.velocity[self.pid_reference_counter][2] - self.instantaneous_velocity_data[1][2]]
+                    
+                    Ea = [self.acceleration[self.pid_reference_counter][0] - self.instantaneous_acceleration_data[1][0],
+                        self.acceleration[self.pid_reference_counter][1] - self.instantaneous_acceleration_data[1][1],
+                        self.acceleration[self.pid_reference_counter][2] - self.instantaneous_acceleration_data[1][2]]
+
+                    PID_velocity = [Ep[0]*self.Ki + Ev[0]*self.Kp + Ea[0]*self.Kd,
+                                    Ep[1]*self.Ki + Ev[1]*self.Kp + Ea[1]*self.Kd,
+                                    Ep[2]*self.Ki + Ev[2]*self.Kp + Ea[2]*self.Kd]
+
+                    self.corrected_velocity = [self.instantaneous_velocity_data[1][0] + PID_velocity[0],
+                                            self.instantaneous_velocity_data[1][1] + PID_velocity[1],
+                                            self.instantaneous_velocity_data[1][2] + PID_velocity[2]]
+
+                    self.get_logger().info("PID_velocity = " + str(PID_velocity))
                 
-                Ea = [acceleration[self.pid_reference_counter][0] - self.instantaneous_acceleration_data[1][0],
-                      acceleration[self.pid_reference_counter][1] - self.instantaneous_acceleration_data[1][1],
-                      acceleration[self.pid_reference_counter][2] - self.instantaneous_acceleration_data[1][2]]
+                    self.pid_reference_counter = self.pid_reference_counter + 1
 
-                PID_velocity = [Ep[0]*self.Ki + Ev[0]*self.Kp + Ea[0]*self.Kd,
-                                Ep[1]*self.Ki + Ev[1]*self.Kp + Ea[1]*self.Kd,
-                                Ep[2]*self.Ki + Ev[2]*self.Kp + Ea[2]*self.Kd]
-
-                self.corrected_velocity = [self.instantaneous_velocity_data[1][0] + PID_velocity[0],
-                                           self.instantaneous_velocity_data[1][1] + PID_velocity[1],
-                                           self.instantaneous_velocity_data[1][2] + PID_velocity[2]]
-
-                self.get_logger().info("PID_velocity = " + str(PID_velocity))
-            
-                self.pid_reference_counter = self.pid_reference_counter + 1
-
-            # self.get_logger().info("position " + str(len(position)))
-            # self.get_logger().info("velocity " + str(len(velocity)))
-            # self.get_logger().info("acceleration " + str(len(acceleration)))
+            # self.get_logger().info("position " + str(len(self.position)))
+            # self.get_logger().info("velocity " + str(len(self.velocity)))
+            # self.get_logger().info("acceleration " + str(len(self.acceleration)))
 
 
 def main(args=None):
