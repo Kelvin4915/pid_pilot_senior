@@ -7,6 +7,7 @@ from pplanner_interfaces.msg import ArucoData
 from pplanner_interfaces.msg import ArucoDataset
 import threading
 import math
+import time
 
 class PidPilotSenior(Node):
     def __init__(self):
@@ -15,7 +16,16 @@ class PidPilotSenior(Node):
 
         #---------------CHANGE ME ACCORDING TO ROBOT ID-------------
         self.robot_id = 3 
-        #---------------CHANGE ME ACCORDING TO ROBOT ID-------------
+        """
+        --TO--DO--
+        set kp,ki,kd values
+        add extra filler values
+        set time interval
+        define equations of motion
+        map duty cycle
+        gpio commands
+        
+        """
 
         self.path_data = self.create_subscription(PathGridset, "path", self.callback_pid_path, 10)
         self.path_data = self.create_subscription(ArucoDataset, "robots", self.callback_actual_position, 10)
@@ -30,6 +40,7 @@ class PidPilotSenior(Node):
         self.path_pid_reference.path = [self.temp]
 
         self.all_robots_data = ArucoDataset
+        self.actual_position = []
         
         self.pid_function_local_path_reference = []
         self.path_traverse = [self.temp]
@@ -48,34 +59,49 @@ class PidPilotSenior(Node):
         self.instantaneous_acceleration_data = [[0,0,0],[0,0,0]]
         self.corrected_velocity = [0,0,0]
 
+        self.timercounter = 0
+        self.old_time = 0
+        self.new_time = 0
         pid_thread = threading.Thread(target = self.pid_function)
         pid_thread.start()
 
     def callback_pid_path(self,msg):
         self.get_logger().info("path data received")
         self.path_traverse = msg
-        # self.get_logger().info("self.path_traverse: " + str(self.path_traverse))
+        # self.get_logger().info("callback_pid_path/ self.path_traverse: " + str(self.path_traverse))
         if (self.path_pid_reference != self.path_traverse):
             self.path_pid_reference = self.path_traverse
             self.path_pid_temp = []
             for i in range(len(self.path_traverse.path)):            
                 self.path_pid_temp.append([self.path_traverse.path[i].row,self.path_traverse.path[i].col])
             self.path_pid = self.path_pid_temp[:]
-            self.get_logger().info("self.path_pid: " + str(self.path_pid))
+            # self.get_logger().info("self.path_pid: " + str(self.path_pid))
 
     def callback_actual_position(self, msg):
-        self.get_logger().info("robot data received")
+        self.get_logger().info("robot actual data received")
+        
+        if self.timercounter == 0:
+            self.timercounter = 1
+            self.new_time = time.time()
+        self.old_time = self.new_time
+        self.new_time = time.time()
+        rate  = 1/(self.new_time - self.old_time)
+        # self.get_logger().info("subscribe rate = " + str(rate))
+        # self.get_logger().info("subscribe time difference = " + str(self.new_time - self.old_time))
+
+        # self.get_logger().info("robot data received")
         self.all_robots_data = msg
         for i in range(len(self.all_robots_data.dataset)):
             if self.all_robots_data.dataset[i].id_data == self.robot_id:
-                self.robot_data = [self.all_robots_data.dataset[i].x_data, self.all_robots_data.dataset[i].y_data, self.all_robots_data.dataset[i].orientation_data]
-                self.get_logger().info("robot data: " + str(self.robot_data))
+                self.actual_position = [self.all_robots_data.dataset[i].x_data, self.all_robots_data.dataset[i].y_data, self.all_robots_data.dataset[i].orientation_data]
+                # self.get_logger().info("robot data: " + str(self.actual_position))
                 break
 
     def pid_function(self):
         
         while(1):
             # self.get_logger().info(str(self.path_pid))
+            # self.get_logger().info("pid_function running")
             if self.pid_function_local_path_reference != self.path_pid:
                 self.get_logger().info("Inside Calculation Loop")
                 self.pid_reference_counter = 0
@@ -142,12 +168,11 @@ class PidPilotSenior(Node):
                 if len(self.path_pid) != 0:
 
                     self.get_logger().info("Inside Controller Loop")
-                    actual_position = [0,0,0]
                     if self.pid_reference_counter == 0:    
-                        self.instantaneous_position_data = [actual_position,actual_position] 
+                        self.instantaneous_position_data = [self.actual_position,self.actual_position] 
 
                     self.instantaneous_position_data[0] = self.instantaneous_position_data[1]
-                    self.instantaneous_position_data[1] = actual_position
+                    self.instantaneous_position_data[1] = self.actual_position
 
                     self.instantaneous_velocity_data[0] = self.instantaneous_velocity_data[1]
                     self.instantaneous_velocity_data[1] = [(self.instantaneous_position_data[1][0] - self.instantaneous_position_data[0][0])/self.time_interval,
