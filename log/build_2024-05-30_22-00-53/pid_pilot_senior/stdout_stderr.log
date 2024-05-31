@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing pid_pilot_senior.egg-info/PKG-INFO
+writing dependency_links to pid_pilot_senior.egg-info/dependency_links.txt
+writing entry points to pid_pilot_senior.egg-info/entry_points.txt
+writing requirements to pid_pilot_senior.egg-info/requires.txt
+writing top-level names to pid_pilot_senior.egg-info/top_level.txt
+reading manifest file 'pid_pilot_senior.egg-info/SOURCES.txt'
+writing manifest file 'pid_pilot_senior.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid-pilot-senior.egg-link (link to .)
+Installing pid_pilot_senior script to /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/pid_pilot_senior
+
+Installed /home/dualipa/pid_pilot_senior/build/pid_pilot_senior
+running symlink_data
+symbolically linking /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/resource/pid_pilot_senior -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index/packages
+symbolically linking /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/package.xml -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/pid_pilot_senior

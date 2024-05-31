@@ -53,7 +53,7 @@ class PidPilotSenior(Node):
         self.acceleration = []
         
         # PID variables
-        self.Kp = 0
+        self.Kp = 1000
         self.Ki = 0
         self.Kd = 0
         self.pid_reference_counter = 0
@@ -251,7 +251,7 @@ class PidPilotSenior(Node):
 
                     PID_velocity = [Ep[0]*self.Ki + Ev[0]*self.Kp + Ea[0]*self.Kd,
                                     Ep[1]*self.Ki + Ev[1]*self.Kp + Ea[1]*self.Kd,
-                                    Ep[2]*self.Ki + Ev[2]*self.Kp + Ea[2]*self.Kd]
+                                    Ep[2]*self.Ki + Ev[2]*1000 + Ea[2]*self.Kd]
 
                     # self.get_logger().info("PID_velocity = " + str(PID_velocity))
                     # time.sleep(1)
@@ -262,17 +262,27 @@ class PidPilotSenior(Node):
                     self.Phi_dot_L = (1/self.r)*(self.Va - ((self.Theta_dot * self.S)/2))
                     self.Phi_dot_R = (1/self.r)*(self.Va + ((self.Theta_dot * self.S)/2))
 
+                    self.get_logger().info("counter number " + str(self.pid_reference_counter))
+                    # self.get_logger().info("Va = " + str(self.Va))
+                    self.get_logger().info("x error = " + str(self.Ea[0]))
+                    self.get_logger().info("y error = " + str(self.Ea[1]))
+                    # self.get_logger().info("omega = " + str(self.Theta_dot))
+                    # self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
+                    # self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
+
+
                     self.Phi_dot_L_act = np.interp(self.Phi_dot_L, self.Phi_dot_L_range, self.L_range_actual)
                     self.Phi_dot_R_act = np.interp(self.Phi_dot_R, self.Phi_dot_R_range, self.R_range_actual)
-
+                    # self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
+                    # self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
                     self.time_check_start = time.time()
                     self.time_check_inter = time.time()
                     self.position_check = self.actual_position[:]
 
-                    while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position == self.position_check)):
-                        self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
-                        self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
-                        self.time_check_inter = time.time()
+                    # while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position == self.position_check)):
+                    #     self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
+                    #     self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
+                    #     self.time_check_inter = time.time()
 
                     self.pid_reference_counter = self.pid_reference_counter + 1
 

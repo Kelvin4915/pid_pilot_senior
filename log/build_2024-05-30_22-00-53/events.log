@@ -1,0 +1,109 @@
+[0.000000] (-) TimerEvent: {}
+[0.001036] (-) JobUnselected: {'identifier': 'pplanner_interfaces'}
+[0.001944] (pid_pilot_senior) JobQueued: {'identifier': 'pid_pilot_senior', 'dependencies': OrderedDict()}
+[0.002552] (pid_pilot_senior) JobStarted: {'identifier': 'pid_pilot_senior'}
+[0.099339] (-) TimerEvent: {}
+[0.200837] (-) TimerEvent: {}
+[0.302101] (-) TimerEvent: {}
+[0.403216] (-) TimerEvent: {}
+[0.504442] (-) TimerEvent: {}
+[0.605543] (-) TimerEvent: {}
+[0.707145] (-) TimerEvent: {}
+[0.809240] (-) TimerEvent: {}
+[0.912086] (-) TimerEvent: {}
+[1.013450] (-) TimerEvent: {}
+[1.114782] (-) TimerEvent: {}
+[1.216108] (-) TimerEvent: {}
+[1.317163] (-) TimerEvent: {}
+[1.418363] (-) TimerEvent: {}
+[1.519423] (-) TimerEvent: {}
+[1.620495] (-) TimerEvent: {}
+[1.721845] (-) TimerEvent: {}
+[1.823272] (-) TimerEvent: {}
+[1.924994] (-) TimerEvent: {}
+[2.026720] (-) TimerEvent: {}
+[2.128474] (-) TimerEvent: {}
+[2.230293] (-) TimerEvent: {}
+[2.331713] (-) TimerEvent: {}
+[2.434109] (-) TimerEvent: {}
+[2.535714] (-) TimerEvent: {}
+[2.636921] (-) TimerEvent: {}
+[2.738284] (-) TimerEvent: {}
+[2.839602] (-) TimerEvent: {}
+[2.940471] (-) TimerEvent: {}
+[3.041375] (-) TimerEvent: {}
+[3.142214] (-) TimerEvent: {}
+[3.242984] (-) TimerEvent: {}
+[3.343782] (-) TimerEvent: {}
+[3.444633] (-) TimerEvent: {}
+[3.545500] (-) TimerEvent: {}
+[3.647020] (-) TimerEvent: {}
+[3.748788] (-) TimerEvent: {}
+[3.849926] (-) TimerEvent: {}
+[3.951316] (-) TimerEvent: {}
+[4.052414] (-) TimerEvent: {}
+[4.153360] (-) TimerEvent: {}
+[4.254576] (-) TimerEvent: {}
+[4.355810] (-) TimerEvent: {}
+[4.457047] (-) TimerEvent: {}
+[4.558896] (-) TimerEvent: {}
+[4.649816] (pid_pilot_senior) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dualipa', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/dualipa', 'OLDPWD': '/home/dualipa/pid_pilot_senior/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3382', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install:/home/dualipa/mark1/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'dualipa', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dualipa', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/dualipa:@/tmp/.ICE-unix/3134,unix/dualipa:/tmp/.ICE-unix/3134', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/a4d909f4_d6f6_4acb_91f2_0df49011cd9b', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.148', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces'}, 'shell': False}
+[4.666556] (-) TimerEvent: {}
+[4.768455] (-) TimerEvent: {}
+[4.869520] (-) TimerEvent: {}
+[4.970833] (-) TimerEvent: {}
+[5.072477] (-) TimerEvent: {}
+[5.173676] (-) TimerEvent: {}
+[5.274734] (-) TimerEvent: {}
+[5.376003] (-) TimerEvent: {}
+[5.477948] (-) TimerEvent: {}
+[5.579512] (-) TimerEvent: {}
+[5.681205] (-) TimerEvent: {}
+[5.782611] (-) TimerEvent: {}
+[5.883857] (-) TimerEvent: {}
+[5.985231] (-) TimerEvent: {}
+[6.086628] (-) TimerEvent: {}
+[6.188102] (-) TimerEvent: {}
+[6.289246] (-) TimerEvent: {}
+[6.390797] (-) TimerEvent: {}
+[6.492654] (-) TimerEvent: {}
+[6.594441] (-) TimerEvent: {}
+[6.695887] (-) TimerEvent: {}
+[6.772003] (pid_pilot_senior) StdoutLine: {'line': b'running develop\n'}
+[6.796180] (-) TimerEvent: {}
+[6.898146] (-) TimerEvent: {}
+[6.999624] (-) TimerEvent: {}
+[7.100782] (-) TimerEvent: {}
+[7.201573] (-) TimerEvent: {}
+[7.302672] (-) TimerEvent: {}
+[7.403934] (-) TimerEvent: {}
+[7.505077] (-) TimerEvent: {}
+[7.606438] (-) TimerEvent: {}
+[7.707900] (-) TimerEvent: {}
+[7.809392] (-) TimerEvent: {}
+[7.910701] (-) TimerEvent: {}
+[8.012156] (-) TimerEvent: {}
+[8.113697] (-) TimerEvent: {}
+[8.148675] (pid_pilot_senior) StdoutLine: {'line': b'running egg_info\n'}
+[8.149763] (pid_pilot_senior) StdoutLine: {'line': b'writing pid_pilot_senior.egg-info/PKG-INFO\n'}
+[8.153295] (pid_pilot_senior) StdoutLine: {'line': b'writing dependency_links to pid_pilot_senior.egg-info/dependency_links.txt\n'}
+[8.154979] (pid_pilot_senior) StdoutLine: {'line': b'writing entry points to pid_pilot_senior.egg-info/entry_points.txt\n'}
+[8.155798] (pid_pilot_senior) StdoutLine: {'line': b'writing requirements to pid_pilot_senior.egg-info/requires.txt\n'}
+[8.156520] (pid_pilot_senior) StdoutLine: {'line': b'writing top-level names to pid_pilot_senior.egg-info/top_level.txt\n'}
+[8.169307] (pid_pilot_senior) StdoutLine: {'line': b"reading manifest file 'pid_pilot_senior.egg-info/SOURCES.txt'\n"}
+[8.176994] (pid_pilot_senior) StdoutLine: {'line': b"writing manifest file 'pid_pilot_senior.egg-info/SOURCES.txt'\n"}
+[8.189860] (pid_pilot_senior) StdoutLine: {'line': b'running build_ext\n'}
+[8.194533] (pid_pilot_senior) StdoutLine: {'line': b'Creating /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid-pilot-senior.egg-link (link to .)\n'}
+[8.201022] (pid_pilot_senior) StdoutLine: {'line': b'Installing pid_pilot_senior script to /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/pid_pilot_senior\n'}
+[8.204461] (pid_pilot_senior) StdoutLine: {'line': b'\n'}
+[8.205755] (pid_pilot_senior) StdoutLine: {'line': b'Installed /home/dualipa/pid_pilot_senior/build/pid_pilot_senior\n'}
+[8.207029] (pid_pilot_senior) StdoutLine: {'line': b'running symlink_data\n'}
+[8.213143] (pid_pilot_senior) StdoutLine: {'line': b'symbolically linking /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/resource/pid_pilot_senior -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index/packages\n'}
+[8.218455] (-) TimerEvent: {}
+[8.226628] (pid_pilot_senior) StdoutLine: {'line': b'symbolically linking /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/package.xml -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/pid_pilot_senior\n'}
+[8.318861] (-) TimerEvent: {}
+[8.421156] (-) TimerEvent: {}
+[8.486100] (pid_pilot_senior) CommandEnded: {'returncode': 0}
+[8.521572] (-) TimerEvent: {}
+[8.589064] (pid_pilot_senior) JobEnded: {'identifier': 'pid_pilot_senior', 'rc': 0}
+[8.593461] (-) EventReactorShutdown: {}

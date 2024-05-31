@@ -1,3 +1,0 @@
-[console_scripts]
-pid_pilot_senior = pid_pilot_senior.pid_pilot_senior:main
-
