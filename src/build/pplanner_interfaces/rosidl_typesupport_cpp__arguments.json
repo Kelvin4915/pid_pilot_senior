@@ -1,0 +1,23 @@
+{
+  "package_name": "pplanner_interfaces",
+  "output_dir": "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_typesupport_cpp/pplanner_interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
+  "idl_tuples": [
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGrid.idl",
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGridset.idl",
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoData.idl",
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoDataset.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/action__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGrid.idl",
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl",
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl",
+    "/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl"
+  ]
+}

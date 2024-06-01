@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pplanner_interfaces/msg/PathGrid.msg
+// generated code does not contain a copyright notice
+
+
+module pplanner_interfaces {
+  module msg {
+    struct PathGrid {
+      int64 row;
+
+      int64 col;
+    };
+  };
+};

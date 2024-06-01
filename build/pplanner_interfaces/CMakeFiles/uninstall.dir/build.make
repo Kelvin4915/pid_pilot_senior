@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dualipa/pid_pilot_senior/src/pplanner_interfaces
+CMAKE_SOURCE_DIR = /home/kelvin/pid_pilot_senior/src/pplanner_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dualipa/pid_pilot_senior/build/pplanner_interfaces
+CMAKE_BINARY_DIR = /home/kelvin/pid_pilot_senior/build/pplanner_interfaces
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/dualipa/pid_pilot_senior/build/pplanner_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dualipa/pid_pilot_senior/src/pplanner_interfaces /home/dualipa/pid_pilot_senior/src/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kelvin/pid_pilot_senior/build/pplanner_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

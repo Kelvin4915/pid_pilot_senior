@@ -46,7 +46,6 @@ class PidPilotSenior(Node):
         
         self.pid_function_local_path_reference = []
         self.path_traverse = [self.temp]
-        self.time_interval = 5
 
         self.position = []
         self.velocity = []
@@ -61,6 +60,10 @@ class PidPilotSenior(Node):
         self.instantaneous_velocity_data = [[0,0,0],[0,0,0]]
         self.instantaneous_acceleration_data = [[0,0,0],[0,0,0]]
         self.corrected_velocity = [0,0,0]
+        self.error_timer = [0.0, 0.0]
+        self.E = [[0,0,0],[0,0,0]]
+        self.E_dot = [0,0,0]
+        self.E_adot = [0,0,0]
 
         # equation of motion varaiables
         self.Va = 0.0
@@ -147,7 +150,7 @@ class PidPilotSenior(Node):
         for i in range(len(self.all_robots_data.dataset)):
             if self.all_robots_data.dataset[i].id_data == self.robot_id:
                 
-                self.actual_position = [self.all_robots_data.dataset[i].x_data, self.all_robots_data.dataset[i].y_data, self.all_robots_data.dataset[i].orientation_data]
+                self.actual_position = [self.all_robots_data.dataset[i].y_data, self.all_robots_data.dataset[i].x_data, self.all_robots_data.dataset[i].orientation_data]
                 # self.get_logger().info("robot data: " + str(self.actual_position))
                 break
 
@@ -195,16 +198,16 @@ class PidPilotSenior(Node):
                 # self.get_logger().info(str(self.pid_function_local_path) + " 2 pid_function_local_path")
                 # self.get_logger().info(str(len(self.pid_function_local_path)) + " length pid_function_local_path")
 
-                temp_velocity = [[(self.pid_function_local_path[i+1][0] - self.pid_function_local_path[i][0]) / self.time_interval, 
-                    (self.pid_function_local_path[i+1][1] - self.pid_function_local_path[i][1]) / self.time_interval,
-                    (self.pid_function_local_path[i+1][2] - self.pid_function_local_path[i][2]) / self.time_interval] for i in range(0, len(self.pid_function_local_path)-1)]
+                # temp_velocity = [[(self.pid_function_local_path[i+1][0] - self.pid_function_local_path[i][0]) / self.time_interval, 
+                #     (self.pid_function_local_path[i+1][1] - self.pid_function_local_path[i][1]) / self.time_interval,
+                #     (self.pid_function_local_path[i+1][2] - self.pid_function_local_path[i][2]) / self.time_interval] for i in range(0, len(self.pid_function_local_path)-1)]
                 
-                self.velocity = temp_velocity
-                temp_velocity = temp_velocity + [[0,0,0]]
+                # self.velocity = temp_velocity
+                # temp_velocity = temp_velocity + [[0,0,0]]
 
-                self.acceleration = [[(temp_velocity[i+1][0] - temp_velocity[i][0]) / self.time_interval,
-                     (temp_velocity[i+1][1] - temp_velocity[i][1]) / self.time_interval,
-                     (temp_velocity[i+1][2] - temp_velocity[i][2]) / self.time_interval] for i in range(0, len(temp_velocity)-1)]
+                # self.acceleration = [[(temp_velocity[i+1][0] - temp_velocity[i][0]) / self.time_interval,
+                #      (temp_velocity[i+1][1] - temp_velocity[i][1]) / self.time_interval,
+                #      (temp_velocity[i+1][2] - temp_velocity[i][2]) / self.time_interval] for i in range(0, len(temp_velocity)-1)]
                 
                 # self.get_logger().info(str(len(path_pid)) + " length path_pid")
 
@@ -226,32 +229,27 @@ class PidPilotSenior(Node):
 
                     self.instantaneous_position_data[0] = self.instantaneous_position_data[1]
                     self.instantaneous_position_data[1] = self.actual_position
-
-                    self.instantaneous_velocity_data[0] = self.instantaneous_velocity_data[1]
-                    self.instantaneous_velocity_data[1] = [(self.instantaneous_position_data[1][0] - self.instantaneous_position_data[0][0])/self.time_interval,
-                                                        (self.instantaneous_position_data[1][1] - self.instantaneous_position_data[0][1])/self.time_interval,
-                                                        (self.instantaneous_position_data[1][2] - self.instantaneous_position_data[0][2])/self.time_interval,]
-
-                    self.instantaneous_acceleration_data[0] = self.instantaneous_acceleration_data[1]
-                    self.instantaneous_acceleration_data[1] = [(self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval,
-                                                            (self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval,
-                                                            (self.instantaneous_velocity_data[1][0] - self.instantaneous_velocity_data[0][0])/self.time_interval]
-                
-                    Ep = [self.position[self.pid_reference_counter][0] - self.instantaneous_position_data[1][0],
-                        self.position[self.pid_reference_counter][1] - self.instantaneous_position_data[1][1],
-                        self.position[self.pid_reference_counter][2] - self.instantaneous_position_data[1][2]]
                     
-                    Ev = [self.velocity[self.pid_reference_counter][0] - self.instantaneous_velocity_data[1][0],
-                        self.velocity[self.pid_reference_counter][1] - self.instantaneous_velocity_data[1][1],
-                        self.velocity[self.pid_reference_counter][2] - self.instantaneous_velocity_data[1][2]]
-                    
-                    Ea = [self.acceleration[self.pid_reference_counter][0] - self.instantaneous_acceleration_data[1][0],
-                        self.acceleration[self.pid_reference_counter][1] - self.instantaneous_acceleration_data[1][1],
-                        self.acceleration[self.pid_reference_counter][2] - self.instantaneous_acceleration_data[1][2]]
+                    self.error_timer[0] = self.error_timer[1]
+                    self.error_timer[1] = time.time()
+                    self.error_timer_diff = self.error_timer[1] - self.error_timer[0]
 
-                    PID_velocity = [Ep[0]*self.Ki + Ev[0]*self.Kp + Ea[0]*self.Kd,
-                                    Ep[1]*self.Ki + Ev[1]*self.Kp + Ea[1]*self.Kd,
-                                    Ep[2]*self.Ki + Ev[2]*1000 + Ea[2]*self.Kd]
+                    self.E[0] = self.E[1]
+                    self.E[1] = [self.position[self.pid_reference_counter][0] - self.instantaneous_position_data[1][0],
+                                self.position[self.pid_reference_counter][1] - self.instantaneous_position_data[1][1],
+                                self.position[self.pid_reference_counter][2] - self.instantaneous_position_data[1][2]]
+                    
+                    self.E_dot = [((self.E[1][0] - self.E[0][0]) / self.error_timer_diff),
+                                    ((self.E[1][1] - self.E[0][1]) / self.error_timer_diff),
+                                    ((self.E[1][2] - self.E[0][2]) / self.error_timer_diff)]
+                    
+                    self.E_adot = [self.E_adot[0] + (0.5 * (self.E[1][0] + self.E[0][0]) * self.error_timer_diff),
+                                    self.E_adot[1] + (0.5 * (self.E[1][1] + self.E[0][1]) * self.error_timer_diff),
+                                    self.E_adot[2] + (0.5 * (self.E[1][2] + self.E[0][2]) * self.error_timer_diff)]
+
+                    PID_velocity = [self.E[1][0]*self.Kp + self.E_dot[0]*self.Kd + self.E_adot[0]*self.Ki,
+                                    self.E[1][1]*self.Kp + self.E_dot[1]*self.Kd + self.E_adot[1]*self.Ki,
+                                    self.E[1][2]*self.Kp + self.E_dot[2]*self.Kd + self.E_adot[2]*self.Ki]
 
                     # self.get_logger().info("PID_velocity = " + str(PID_velocity))
                     # time.sleep(1)
@@ -263,18 +261,20 @@ class PidPilotSenior(Node):
                     self.Phi_dot_R = (1/self.r)*(self.Va + ((self.Theta_dot * self.S)/2))
 
                     self.get_logger().info("counter number " + str(self.pid_reference_counter))
-                    # self.get_logger().info("Va = " + str(self.Va))
-                    self.get_logger().info("x error = " + str(self.Ea[0]))
-                    self.get_logger().info("y error = " + str(self.Ea[1]))
-                    # self.get_logger().info("omega = " + str(self.Theta_dot))
-                    # self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
-                    # self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
+                    self.get_logger().info("Va = " + str(self.Va))
+                    self.get_logger().info("Theta_dot = " + str(self.Theta_dot))
+                    self.get_logger().info("instantaneous_position_data = " + str(self.instantaneous_position_data))
+                    self.get_logger().info("x error = " + str(self.E[0]))
+                    self.get_logger().info("y error = " + str(self.E[1]))
+                    self.get_logger().info("omega = " + str(self.Theta_dot))
+                    self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
+                    self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
 
 
                     self.Phi_dot_L_act = np.interp(self.Phi_dot_L, self.Phi_dot_L_range, self.L_range_actual)
                     self.Phi_dot_R_act = np.interp(self.Phi_dot_R, self.Phi_dot_R_range, self.R_range_actual)
-                    # self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
-                    # self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
+                    self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
+                    self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
                     self.time_check_start = time.time()
                     self.time_check_inter = time.time()
                     self.position_check = self.actual_position[:]

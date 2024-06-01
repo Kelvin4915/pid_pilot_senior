@@ -1,0 +1,306 @@
+[0.147s] Invoking command in '/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/ros2_ws/install/turtle_catcher:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake /home/kelvin/pid_pilot_senior/src/pplanner_interfaces -DCMAKE_INSTALL_PREFIX=/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces
+[0.175s] -- The C compiler identification is GNU 11.4.0
+[0.204s] -- The CXX compiler identification is GNU 11.4.0
+[0.208s] -- Detecting C compiler ABI info
+[0.244s] -- Detecting C compiler ABI info - done
+[0.248s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.248s] -- Detecting C compile features
+[0.248s] -- Detecting C compile features - done
+[0.250s] -- Detecting CXX compiler ABI info
+[0.292s] -- Detecting CXX compiler ABI info - done
+[0.296s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.296s] -- Detecting CXX compile features
+[0.296s] -- Detecting CXX compile features - done
+[0.297s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.383s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.430s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.431s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.435s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.456s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.614s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.714s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.840s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.853s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.854s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.868s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.868s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.868s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.868s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.880s] -- Found PythonExtra: .so  
+[0.899s] -- Configuring done
+[0.914s] -- Generating done
+[0.915s] -- Build files have been written to: /home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces
+[0.918s] Invoked command in '/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/ros2_ws/install/turtle_catcher:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake /home/kelvin/pid_pilot_senior/src/pplanner_interfaces -DCMAKE_INSTALL_PREFIX=/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces
+[0.919s] Invoking command in '/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/ros2_ws/install/turtle_catcher:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --build /home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces -- -j20 -l20
+[0.940s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.945s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.949s] [  3%] Built target ament_cmake_python_copy_pplanner_interfaces
+[1.100s] running egg_info
+[1.101s] creating pplanner_interfaces.egg-info
+[1.101s] writing pplanner_interfaces.egg-info/PKG-INFO
+[1.101s] writing dependency_links to pplanner_interfaces.egg-info/dependency_links.txt
+[1.101s] writing top-level names to pplanner_interfaces.egg-info/top_level.txt
+[1.101s] writing manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[1.102s] reading manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[1.103s] writing manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[1.118s] [  3%] Built target ament_cmake_python_build_pplanner_interfaces_egg
+[1.151s] [  3%] Built target pplanner_interfaces__cpp
+[1.157s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.157s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.157s] [  9%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.161s] [ 10%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.c.o[0m
+[1.162s] [ 14%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.o[0m
+[1.162s] [ 14%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.c.o[0m
+[1.164s] [ 16%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.o[0m
+[1.200s] [ 18%] [32m[1mLinking C shared library libpplanner_interfaces__rosidl_generator_c.so[0m
+[1.222s] [ 18%] Built target pplanner_interfaces__rosidl_generator_c
+[1.228s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.228s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.228s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.322s] [ 25%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.o[0m
+[1.323s] [ 27%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.cpp.o[0m
+[1.323s] [ 29%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.cpp.o[0m
+[1.324s] [ 30%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o[0m
+[1.350s] [ 32%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.o[0m
+[1.351s] [ 34%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.o[0m
+[1.351s] [ 38%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_gridset__type_support.cpp.o[0m
+[1.351s] [ 38%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.cpp.o[0m
+[1.365s] [ 43%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_gridset__type_support.cpp.o[0m
+[1.365s] [ 43%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.cpp.o[0m
+[1.365s] [ 43%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.o[0m
+[1.366s] [ 45%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.o[0m
+[1.408s] [ 52%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o[0m
+[1.408s] [ 52%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp.o[0m
+[1.408s] [ 52%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.o[0m
+[1.408s] [ 52%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o[0m
+[1.436s] [ 54%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_c.so[0m
+[1.456s] [ 60%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.o[0m
+[1.456s] [ 60%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.cpp.o[0m
+[1.456s] [ 60%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.o[0m
+[1.456s] [ 61%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_support_c.cpp.o[0m
+[1.457s] [ 63%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.c.o[0m
+[1.458s] [ 65%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.o[0m
+[1.465s] [ 67%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.c.o[0m
+[1.484s] [ 67%] Built target pplanner_interfaces__rosidl_typesupport_c
+[1.489s] [ 69%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.o[0m
+[1.524s] [ 70%] [32m[1mLinking C shared library libpplanner_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.555s] [ 70%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c
+[1.620s] [ 72%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_cpp.so[0m
+[1.662s] [ 72%] Built target pplanner_interfaces__rosidl_typesupport_cpp
+[1.685s] [ 74%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.730s] [ 74%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c
+[1.754s] [ 76%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.762s] [ 78%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.794s] [ 78%] Built target pplanner_interfaces__rosidl_typesupport_introspection_cpp
+[1.802s] [ 78%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.812s] [ 78%] Built target pplanner_interfaces
+[1.821s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.061s] [ 80%] Built target pplanner_interfaces__py
+[2.071s] [ 81%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.c.o[0m
+[2.071s] [ 83%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c.o[0m
+[2.072s] [ 85%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.o[0m
+[2.072s] [ 87%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.o[0m
+[2.124s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/libpplanner_interfaces__rosidl_generator_py.so[0m
+[2.145s] [ 89%] Built target pplanner_interfaces__rosidl_generator_py
+[2.155s] [ 90%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.155s] [ 92%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.155s] [ 94%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.207s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.207s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.208s] [100%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.225s] [100%] Built target pplanner_interfaces__rosidl_typesupport_c__pyext
+[2.225s] [100%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.226s] [100%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.232s] Invoked command in '/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/ros2_ws/install/turtle_catcher:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --build /home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces -- -j20 -l20
+[2.303s] Invoking command in '/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/ros2_ws/install/turtle_catcher:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --install /home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces
+[2.309s] -- Install configuration: ""
+[2.309s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/ament_index/resource_index/rosidl_interfaces/pplanner_interfaces
+[2.309s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[2.309s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[2.309s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.h
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.h
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.h
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.h
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.h
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.h
+[2.310s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.c
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.c
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.c
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.c
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.h
+[2.311s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.sh
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.dsv
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_c.so
+[2.312s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_c.so" to ""
+[2.312s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[2.312s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.312s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_c.h
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_c.h
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_c.h
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_c.h
+[2.312s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.312s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.313s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[2.313s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.313s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_c.h
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.c
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.c
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_c.h
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.c
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_c.h
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_c.h
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_c.so
+[2.313s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.313s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_c.so
+[2.313s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_c.so" to ""
+[2.313s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[2.313s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.hpp
+[2.314s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__builder.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__traits.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__traits.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__traits.hpp
+[2.314s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__builder.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__builder.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.hpp
+[2.315s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[2.315s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.315s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_cpp.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_cpp.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_cpp.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_cpp.hpp
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/dds_fastrtps
+[2.315s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.315s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.316s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[2.316s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[2.316s] -- Up-to-date: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_cpp.hpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.cpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_cpp.hpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.cpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_cpp.hpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_cpp.hpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.316s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_cpp.so
+[2.316s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.sh
+[2.316s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.dsv
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset_s.c
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset.py
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data.py
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid_s.c
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data_s.c
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/__init__.py
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset.py
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset_s.c
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid.py
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/__init__.py
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.317s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/libpplanner_interfaces__rosidl_generator_py.so
+[2.337s] Listing '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces'...
+[2.338s] Compiling '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/__init__.py'...
+[2.338s] Listing '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg'...
+[2.338s] Compiling '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/__init__.py'...
+[2.338s] Compiling '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data.py'...
+[2.338s] Compiling '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset.py'...
+[2.338s] Compiling '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid.py'...
+[2.338s] Compiling '/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset.py'...
+[2.340s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.340s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.340s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.340s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.340s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.341s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_py.so
+[2.341s] -- Set runtime path of "/home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_py.so" to ""
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.idl
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.idl
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.idl
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.idl
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.msg
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.msg
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.msg
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.msg
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/ament_index/resource_index/package_run_dependencies/pplanner_interfaces
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/ament_index/resource_index/parent_prefix_path/pplanner_interfaces
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.sh
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.dsv
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.sh
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.dsv
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.bash
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.sh
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.zsh
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.dsv
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/package.dsv
+[2.341s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/ament_index/resource_index/packages/pplanner_interfaces
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cppExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.342s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.343s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.343s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.343s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig.cmake
+[2.343s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig-version.cmake
+[2.343s] -- Installing: /home/kelvin/pid_pilot_senior/src/install/pplanner_interfaces/share/pplanner_interfaces/package.xml
+[2.344s] Invoked command in '/home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kelvin/ros2_ws/install/turtle_catcher:/home/kelvin/pid_pilot_senior/install/pid_pilot_senior:/home/kelvin/testbot/install/robot1:/opt/ros/humble /usr/bin/cmake --install /home/kelvin/pid_pilot_senior/src/build/pplanner_interfaces

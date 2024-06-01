@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pplanner_interfaces/msg/ArucoDataset.msg
+// generated code does not contain a copyright notice
+
+#include "pplanner_interfaces/msg/ArucoData.idl"
+
+module pplanner_interfaces {
+  module msg {
+    struct ArucoDataset {
+      sequence<pplanner_interfaces::msg::ArucoData> dataset;
+    };
+  };
+};

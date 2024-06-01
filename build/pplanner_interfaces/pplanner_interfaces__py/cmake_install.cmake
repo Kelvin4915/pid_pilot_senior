@@ -1,8 +1,8 @@
-# Install script for directory: /home/dualipa/pid_pilot_senior/build/pplanner_interfaces/pplanner_interfaces__py
+# Install script for directory: /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/pplanner_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/kelvin/pid_pilot_senior/install/pplanner_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
