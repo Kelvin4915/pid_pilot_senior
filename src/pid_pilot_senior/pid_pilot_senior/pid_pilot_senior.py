@@ -42,7 +42,7 @@ class PidPilotSenior(Node):
         self.path_pid_reference.path = [self.temp]
 
         self.all_robots_data = ArucoDataset
-        self.actual_position = []
+        self.actual_position = [0,0,0]
         
         self.pid_function_local_path_reference = []
         self.path_traverse = [self.temp]
@@ -52,9 +52,12 @@ class PidPilotSenior(Node):
         self.acceleration = []
         
         # PID variables
-        self.Kp = 1000
+        self.Kp = 10
         self.Ki = 0
         self.Kd = 0
+        self.Kp_theta = 0.5
+        self.Ki_theta = 0
+        self.Kd_theta = 0
         self.pid_reference_counter = 0
         self.instantaneous_position_data = [[0,0,0],[0,0,0]]
         self.instantaneous_velocity_data = [[0,0,0],[0,0,0]]
@@ -214,11 +217,11 @@ class PidPilotSenior(Node):
                 self.get_logger().info(str(self.position) + " position")
                 self.get_logger().info(str(len(self.position)) + " length position")
 
-                self.get_logger().info(str(self.velocity) + " velocity")
-                self.get_logger().info(str(len(self.velocity)) + " length velocity")
+                #self.get_logger().info(str(self.velocity) + " velocity")
+                #self.get_logger().info(str(len(self.velocity)) + " length velocity")
 
-                self.get_logger().info(str(self.acceleration) + " acceleration")
-                self.get_logger().info(str(len(self.acceleration)) + " length acceleration")
+                #self.get_logger().info(str(self.acceleration) + " acceleration")
+                #self.get_logger().info(str(len(self.acceleration)) + " length acceleration")
 
             if self.pid_function_local_path_reference == self.path_pid and self.pid_reference_counter <= len(self.position) - 1:
                 if len(self.path_pid) != 0:
@@ -249,7 +252,7 @@ class PidPilotSenior(Node):
 
                     PID_velocity = [self.E[1][0]*self.Kp + self.E_dot[0]*self.Kd + self.E_adot[0]*self.Ki,
                                     self.E[1][1]*self.Kp + self.E_dot[1]*self.Kd + self.E_adot[1]*self.Ki,
-                                    self.E[1][2]*self.Kp + self.E_dot[2]*self.Kd + self.E_adot[2]*self.Ki]
+                                    self.E[1][2]*self.Kp_theta + self.E_dot[2]*self.Kd_theta+ self.E_adot[2]*self.Ki_theta]
 
                     # self.get_logger().info("PID_velocity = " + str(PID_velocity))
                     # time.sleep(1)
@@ -264,9 +267,10 @@ class PidPilotSenior(Node):
                     self.get_logger().info("Va = " + str(self.Va))
                     self.get_logger().info("Theta_dot = " + str(self.Theta_dot))
                     self.get_logger().info("instantaneous_position_data = " + str(self.instantaneous_position_data))
-                    self.get_logger().info("x error = " + str(self.E[0]))
-                    self.get_logger().info("y error = " + str(self.E[1]))
-                    self.get_logger().info("omega = " + str(self.Theta_dot))
+                    self.get_logger().info("x error = " + str(self.E[1][0]))
+                    self.get_logger().info("y error = " + str(self.E[1][1]))
+                    self.get_logger().info("theta error = " + str(self.E[1][2]))
+                    self.get_logger().info("theta dot = " + str(self.Theta_dot))
                     self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
                     self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
 

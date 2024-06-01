@@ -1,0 +1,19 @@
+[2.899s] Invoking command in '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior': PYTHONPATH=/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build --no-deps symlink_data --force
+[4.167s] running develop
+[4.941s] running egg_info
+[4.941s] writing pid_pilot_senior.egg-info/PKG-INFO
+[4.942s] writing dependency_links to pid_pilot_senior.egg-info/dependency_links.txt
+[4.943s] writing entry points to pid_pilot_senior.egg-info/entry_points.txt
+[4.944s] writing requirements to pid_pilot_senior.egg-info/requires.txt
+[4.944s] writing top-level names to pid_pilot_senior.egg-info/top_level.txt
+[4.952s] reading manifest file 'pid_pilot_senior.egg-info/SOURCES.txt'
+[4.956s] writing manifest file 'pid_pilot_senior.egg-info/SOURCES.txt'
+[4.962s] running build_ext
+[4.963s] Creating /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid-pilot-senior.egg-link (link to .)
+[4.966s] Installing pid_pilot_senior script to /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/pid_pilot_senior
+[4.967s] 
+[4.968s] Installed /home/dualipa/pid_pilot_senior/build/pid_pilot_senior
+[4.968s] running symlink_data
+[4.968s] symbolically linking /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/resource/pid_pilot_senior -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index/packages
+[4.969s] symbolically linking /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/package.xml -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/pid_pilot_senior
+[5.118s] Invoked command in '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior' returned '0': PYTHONPATH=/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build --no-deps symlink_data --force

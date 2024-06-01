@@ -1,12 +1,12 @@
 {
   "package_name": "pplanner_interfaces",
-  "output_dir": "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_py/pplanner_interfaces",
+  "output_dir": "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_py/pplanner_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGrid.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGridset.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoData.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoDataset.idl"
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGrid.idl",
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/PathGridset.idl",
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoData.idl",
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces:msg/ArucoDataset.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py",
@@ -22,9 +22,9 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGrid.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl",
-    "/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl"
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGrid.idl",
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl",
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl",
+    "/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl"
   ]
 }

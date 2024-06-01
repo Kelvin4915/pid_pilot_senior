@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_FASTRTPS_C_BUILDING_DLL_pplanner_interfaces -DROS_PACKAGE_NAME=\"pplanner_interfaces\"
 
-CXX_INCLUDES = -I/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_fastrtps_c -I/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c
+CXX_INCLUDES = -I/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_fastrtps_c -I/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c
 
 CXX_FLAGS = -fPIC -Wall -Wextra -Wpedantic -std=gnu++14
 
