@@ -4,3 +4,8 @@ pplanner_interfaces.egg-info/PKG-INFO
 pplanner_interfaces.egg-info/SOURCES.txt
 pplanner_interfaces.egg-info/dependency_links.txt
 pplanner_interfaces.egg-info/top_level.txt
+pplanner_interfaces/msg/__init__.py
+pplanner_interfaces/msg/_aruco_data.py
+pplanner_interfaces/msg/_aruco_dataset.py
+pplanner_interfaces/msg/_path_grid.py
+pplanner_interfaces/msg/_path_gridset.py

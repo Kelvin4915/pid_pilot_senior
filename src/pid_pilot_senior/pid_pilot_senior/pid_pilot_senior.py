@@ -52,10 +52,10 @@ class PidPilotSenior(Node):
         self.acceleration = []
         
         # PID variables
-        self.Kp = 10
+        self.Kp = 0.5
         self.Ki = 0
         self.Kd = 0
-        self.Kp_theta = 0.5
+        self.Kp_theta = 0
         self.Ki_theta = 0
         self.Kd_theta = 0
         self.pid_reference_counter = 0
@@ -123,7 +123,7 @@ class PidPilotSenior(Node):
         pid_thread = threading.Thread(target = self.pid_function)
         pid_thread.start()
 
-        self.pixel_to_cm  = 112/1280 # cm / pixels # INSERT ACTUAL VALUE
+        self.pixel_to_cm  = 119/32 # cm / pixels # INSERT ACTUAL VALUE
 
     def callback_pid_path(self,msg):
         self.get_logger().info("path data received")
@@ -283,17 +283,18 @@ class PidPilotSenior(Node):
                     self.time_check_inter = time.time()
                     self.position_check = self.actual_position[:]
 
-                    # while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position == self.position_check)):
-                    #     self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
-                    #     self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
-                    #     self.time_check_inter = time.time()
+                    while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position == self.position_check)):
+                        self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
+                        self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
+                        self.time_check_inter = time.time()
 
                     self.pid_reference_counter = self.pid_reference_counter + 1
 
             # self.get_logger().info("position " + str(len(self.position)))
             # self.get_logger().info("velocity " + str(len(self.velocity)))
             # self.get_logger().info("acceleration " + str(len(self.acceleration)))
-
+            self.servo_motor_left.ChangeDutyCycle(0)
+            self.servo_motor_right.ChangeDutyCycle(0)
 
 def main(args=None):
     rclpy.init(args=args)

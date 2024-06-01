@@ -1,0 +1,353 @@
+[0.000000] (-) TimerEvent: {}
+[0.001591] (pid_pilot_senior) JobQueued: {'identifier': 'pid_pilot_senior', 'dependencies': OrderedDict()}
+[0.002178] (pplanner_interfaces) JobQueued: {'identifier': 'pplanner_interfaces', 'dependencies': OrderedDict()}
+[0.002273] (pid_pilot_senior) JobStarted: {'identifier': 'pid_pilot_senior'}
+[0.055723] (pplanner_interfaces) JobStarted: {'identifier': 'pplanner_interfaces'}
+[0.099020] (-) TimerEvent: {}
+[0.199779] (-) TimerEvent: {}
+[0.300411] (-) TimerEvent: {}
+[0.401062] (-) TimerEvent: {}
+[0.501688] (-) TimerEvent: {}
+[0.602264] (-) TimerEvent: {}
+[0.702854] (-) TimerEvent: {}
+[0.803434] (-) TimerEvent: {}
+[0.904020] (-) TimerEvent: {}
+[1.004654] (-) TimerEvent: {}
+[1.105293] (-) TimerEvent: {}
+[1.206127] (-) TimerEvent: {}
+[1.293292] (pplanner_interfaces) JobProgress: {'identifier': 'pplanner_interfaces', 'progress': 'cmake'}
+[1.298448] (pplanner_interfaces) JobProgress: {'identifier': 'pplanner_interfaces', 'progress': 'build'}
+[1.301001] (pplanner_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dualipa'), ('SSH_CLIENT', '192.168.242.83 36850 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dualipa'), ('OLDPWD', '/home/dualipa'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/dualipa/pid_pilot_senior/install:/home/dualipa/mark1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dualipa'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.242.83 36850 192.168.242.252 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages:/home/dualipa/pid_pilot_senior/build/pid_pilot_senior:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble')]), 'shell': False}
+[1.306222] (-) TimerEvent: {}
+[1.406857] (-) TimerEvent: {}
+[1.508152] (-) TimerEvent: {}
+[1.608818] (-) TimerEvent: {}
+[1.709785] (-) TimerEvent: {}
+[1.811393] (-) TimerEvent: {}
+[1.814938] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_generator_c\x1b[0m\n'}
+[1.908374] (pplanner_interfaces) StdoutLine: {'line': b'[  1%] Built target pplanner_interfaces__cpp\n'}
+[1.911719] (-) TimerEvent: {}
+[1.978412] (pplanner_interfaces) StdoutLine: {'line': b'[ 12%] Built target pplanner_interfaces__rosidl_generator_c\n'}
+[2.011996] (-) TimerEvent: {}
+[2.078117] (pplanner_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_pplanner_interfaces\n'}
+[2.082978] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.112304] (-) TimerEvent: {}
+[2.131164] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.212770] (-) TimerEvent: {}
+[2.215200] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.269836] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.313123] (-) TimerEvent: {}
+[2.358308] (pplanner_interfaces) StdoutLine: {'line': b'[ 23%] Built target pplanner_interfaces__rosidl_typesupport_cpp\n'}
+[2.388763] (pplanner_interfaces) StdoutLine: {'line': b'[ 34%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[2.413458] (-) TimerEvent: {}
+[2.452173] (pplanner_interfaces) StdoutLine: {'line': b'[ 45%] Built target pplanner_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[2.513969] (-) TimerEvent: {}
+[2.536741] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.554295] (pplanner_interfaces) StdoutLine: {'line': b'[ 56%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[2.556393] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[2.614225] (-) TimerEvent: {}
+[2.695289] (pplanner_interfaces) StdoutLine: {'line': b'[ 67%] Built target pplanner_interfaces__rosidl_typesupport_c\n'}
+[2.708968] (pplanner_interfaces) StdoutLine: {'line': b'[ 78%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c\n'}
+[2.714487] (-) TimerEvent: {}
+[2.818558] (-) TimerEvent: {}
+[2.922183] (-) TimerEvent: {}
+[2.941258] (pplanner_interfaces) StdoutLine: {'line': b'[ 78%] Built target pplanner_interfaces\n'}
+[3.022609] (-) TimerEvent: {}
+[3.125848] (-) TimerEvent: {}
+[3.182721] (pplanner_interfaces) StdoutLine: {'line': b'[ 80%] Built target pplanner_interfaces__py\n'}
+[3.226103] (-) TimerEvent: {}
+[3.321130] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_generator_py\x1b[0m\n'}
+[3.330453] (-) TimerEvent: {}
+[3.433727] (-) TimerEvent: {}
+[3.537160] (-) TimerEvent: {}
+[3.575415] (pplanner_interfaces) StdoutLine: {'line': b'[ 89%] Built target pplanner_interfaces__rosidl_generator_py\n'}
+[3.637476] (-) TimerEvent: {}
+[3.740740] (-) TimerEvent: {}
+[3.755191] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[3.760487] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[3.783503] (pplanner_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pplanner_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[3.841046] (-) TimerEvent: {}
+[3.942670] (-) TimerEvent: {}
+[3.977853] (pplanner_interfaces) StdoutLine: {'line': b'[ 92%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.990728] (pplanner_interfaces) StdoutLine: {'line': b'[ 96%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.042992] (-) TimerEvent: {}
+[4.045099] (pplanner_interfaces) StdoutLine: {'line': b'[100%] Built target pplanner_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.143274] (-) TimerEvent: {}
+[4.244692] (-) TimerEvent: {}
+[4.346306] (-) TimerEvent: {}
+[4.447609] (-) TimerEvent: {}
+[4.548940] (-) TimerEvent: {}
+[4.650470] (-) TimerEvent: {}
+[4.751730] (-) TimerEvent: {}
+[4.853092] (-) TimerEvent: {}
+[4.954492] (-) TimerEvent: {}
+[5.055691] (-) TimerEvent: {}
+[5.156641] (-) TimerEvent: {}
+[5.257994] (-) TimerEvent: {}
+[5.276943] (pid_pilot_senior) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build'], 'cwd': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dualipa', 'SSH_CLIENT': '192.168.242.83 36850 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/dualipa', 'OLDPWD': '/home/dualipa', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install:/home/dualipa/mark1/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dualipa', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.242.83 36850 192.168.242.252 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages:/home/dualipa/pid_pilot_senior/build/pid_pilot_senior:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces'}, 'shell': False}
+[5.358106] (-) TimerEvent: {}
+[5.458803] (-) TimerEvent: {}
+[5.465369] (pplanner_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.468758] (pplanner_interfaces) StdoutLine: {'line': b'writing pplanner_interfaces.egg-info/PKG-INFO\n'}
+[5.469865] (pplanner_interfaces) StdoutLine: {'line': b'writing dependency_links to pplanner_interfaces.egg-info/dependency_links.txt\n'}
+[5.470932] (pplanner_interfaces) StdoutLine: {'line': b'writing top-level names to pplanner_interfaces.egg-info/top_level.txt\n'}
+[5.482304] (pplanner_interfaces) StdoutLine: {'line': b"reading manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'\n"}
+[5.486014] (pplanner_interfaces) StdoutLine: {'line': b"writing manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'\n"}
+[5.559119] (-) TimerEvent: {}
+[5.624745] (pplanner_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_pplanner_interfaces_egg\n'}
+[5.659270] (-) TimerEvent: {}
+[5.671099] (pplanner_interfaces) CommandEnded: {'returncode': 0}
+[5.759462] (-) TimerEvent: {}
+[5.860197] (-) TimerEvent: {}
+[5.961580] (-) TimerEvent: {}
+[6.062731] (-) TimerEvent: {}
+[6.164006] (-) TimerEvent: {}
+[6.264686] (-) TimerEvent: {}
+[6.298804] (pplanner_interfaces) JobProgress: {'identifier': 'pplanner_interfaces', 'progress': 'install'}
+[6.338177] (pplanner_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces'], 'cwd': '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dualipa'), ('SSH_CLIENT', '192.168.242.83 36850 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/dualipa'), ('OLDPWD', '/home/dualipa'), ('SSH_TTY', '/dev/pts/3'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/dualipa/pid_pilot_senior/install:/home/dualipa/mark1/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'dualipa'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '6'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.242.83 36850 192.168.242.252 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages:/home/dualipa/pid_pilot_senior/build/pid_pilot_senior:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble')]), 'shell': False}
+[6.364872] (-) TimerEvent: {}
+[6.374201] (pplanner_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.377347] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/rosidl_interfaces/pplanner_interfaces\n'}
+[6.378773] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces\n'}
+[6.379765] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg\n'}
+[6.380852] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.h\n'}
+[6.381638] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.h\n'}
+[6.382152] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail\n'}
+[6.382792] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.c\n'}
+[6.383345] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.h\n'}
+[6.383840] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.h\n'}
+[6.384464] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.h\n'}
+[6.385311] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.h\n'}
+[6.385982] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.h\n'}
+[6.386494] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.h\n'}
+[6.386980] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.h\n'}
+[6.387443] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.c\n'}
+[6.387994] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.h\n'}
+[6.388526] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.h\n'}
+[6.388996] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.h\n'}
+[6.389471] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.c\n'}
+[6.390163] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.c\n'}
+[6.390680] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.h\n'}
+[6.391091] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.h\n'}
+[6.391446] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.h\n'}
+[6.391824] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.392390] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.h\n'}
+[6.392811] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.sh\n'}
+[6.393175] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.dsv\n'}
+[6.393726] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_c.so\n'}
+[6.394177] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces\n'}
+[6.394788] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg\n'}
+[6.395159] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail\n'}
+[6.395667] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_c.h\n'}
+[6.396157] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_c.h\n'}
+[6.396710] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_c.h\n'}
+[6.397216] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_c.h\n'}
+[6.397708] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.398509] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.400004] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces\n'}
+[6.400570] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg\n'}
+[6.401186] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.401659] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail\n'}
+[6.402175] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_c.h\n'}
+[6.402672] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c\n'}
+[6.403213] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.c\n'}
+[6.403731] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_c.h\n'}
+[6.404202] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_c.h\n'}
+[6.404810] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.c\n'}
+[6.405188] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.c\n'}
+[6.405579] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_c.h\n'}
+[6.406117] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.407997] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_c.so\n'}
+[6.409136] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces\n'}
+[6.409920] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg\n'}
+[6.410452] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.hpp\n'}
+[6.411011] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.hpp\n'}
+[6.411459] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail\n'}
+[6.411913] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__builder.hpp\n'}
+[6.412391] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp\n'}
+[6.412955] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__traits.hpp\n'}
+[6.413424] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.hpp\n'}
+[6.414021] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__builder.hpp\n'}
+[6.414547] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.hpp\n'}
+[6.415087] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__traits.hpp\n'}
+[6.415594] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__builder.hpp\n'}
+[6.416217] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.hpp\n'}
+[6.416784] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp\n'}
+[6.417231] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__traits.hpp\n'}
+[6.417641] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp\n'}
+[6.418205] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.hpp\n'}
+[6.418687] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.hpp\n'}
+[6.419111] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces\n'}
+[6.419634] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg\n'}
+[6.420106] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail\n'}
+[6.420496] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.420822] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.421107] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/dds_fastrtps\n'}
+[6.421400] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.421819] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.422204] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.423843] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.425213] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces\n'}
+[6.425781] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg\n'}
+[6.426258] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail\n'}
+[6.426798] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.427274] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.427733] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.cpp\n'}
+[6.428213] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp\n'}
+[6.428720] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp\n'}
+[6.429223] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.cpp\n'}
+[6.429787] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.430270] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.433243] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.436916] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.438301] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.sh\n'}
+[6.438961] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.dsv\n'}
+[6.439488] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info\n'}
+[6.439961] (pplanner_interfaces) StdoutLine: {'line': b'-- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.441330] (pplanner_interfaces) StdoutLine: {'line': b'-- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.442705] (pplanner_interfaces) StdoutLine: {'line': b'-- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.444026] (pplanner_interfaces) StdoutLine: {'line': b'-- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.445552] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces\n'}
+[6.446194] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/libpplanner_interfaces__rosidl_generator_py.so\n'}
+[6.446758] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.447229] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg\n'}
+[6.447766] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data.py\n'}
+[6.448225] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset.py\n'}
+[6.448797] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data_s.c\n'}
+[6.449297] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset_s.c\n'}
+[6.449909] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset.py\n'}
+[6.450389] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid_s.c\n'}
+[6.450806] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/__init__.py\n'}
+[6.451222] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid.py\n'}
+[6.451654] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset_s.c\n'}
+[6.452201] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.452674] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.453120] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.453819] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/__init__.py\n'}
+[6.454276] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.454607] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.465060] (-) TimerEvent: {}
+[6.565921] (-) TimerEvent: {}
+[6.622688] (pplanner_interfaces) StdoutLine: {'line': b"Listing '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces'...\n"}
+[6.624100] (pplanner_interfaces) StdoutLine: {'line': b"Listing '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg'...\n"}
+[6.652171] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.656129] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.658903] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[6.661245] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_py.so\n'}
+[6.663707] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.idl\n'}
+[6.664422] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.idl\n'}
+[6.665051] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.idl\n'}
+[6.665678] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.idl\n'}
+[6.666295] (-) TimerEvent: {}
+[6.667030] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.msg\n'}
+[6.667986] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.msg\n'}
+[6.668683] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.msg\n'}
+[6.669114] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.msg\n'}
+[6.669690] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/package_run_dependencies/pplanner_interfaces\n'}
+[6.670317] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/parent_prefix_path/pplanner_interfaces\n'}
+[6.670913] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.sh\n'}
+[6.671525] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.dsv\n'}
+[6.672063] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.sh\n'}
+[6.672667] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.dsv\n'}
+[6.673323] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.bash\n'}
+[6.674044] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.sh\n'}
+[6.674554] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.zsh\n'}
+[6.675068] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.dsv\n'}
+[6.675517] (pplanner_interfaces) StdoutLine: {'line': b'-- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/package.dsv\n'}
+[6.677261] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/packages/pplanner_interfaces\n'}
+[6.681380] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport.cmake\n'}
+[6.682187] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.682833] (pid_pilot_senior) StdoutLine: {'line': b'running develop\n'}
+[6.684453] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.685113] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.687822] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.688555] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.690793] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[6.691465] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.693448] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cppExport.cmake\n'}
+[6.695750] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.696498] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.698729] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.699330] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.701549] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[6.702214] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.704604] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport.cmake\n'}
+[6.705279] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.705942] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[6.706482] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.707026] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.707601] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.708166] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.708756] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.709342] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.710031] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig.cmake\n'}
+[6.710655] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig-version.cmake\n'}
+[6.711257] (pplanner_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/package.xml\n'}
+[6.719406] (pplanner_interfaces) CommandEnded: {'returncode': 0}
+[6.766668] (-) TimerEvent: {}
+[6.867418] (-) TimerEvent: {}
+[6.968097] (-) TimerEvent: {}
+[7.068793] (-) TimerEvent: {}
+[7.169521] (-) TimerEvent: {}
+[7.270219] (-) TimerEvent: {}
+[7.370971] (-) TimerEvent: {}
+[7.465135] (pplanner_interfaces) JobEnded: {'identifier': 'pplanner_interfaces', 'rc': 0}
+[7.471166] (-) TimerEvent: {}
+[7.542166] (pid_pilot_senior) StdoutLine: {'line': b'Removing /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid-pilot-senior.egg-link (link to .)\n'}
+[7.571510] (-) TimerEvent: {}
+[7.672587] (-) TimerEvent: {}
+[7.683654] (pid_pilot_senior) CommandEnded: {'returncode': 0}
+[7.686818] (pid_pilot_senior) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pid_pilot_senior', 'build', '--build-base', '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build', 'install', '--record', '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/install.log', '--single-version-externally-managed', 'install_data', '--force'], 'cwd': '/home/dualipa/pid_pilot_senior/src/pid_pilot_senior', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dualipa', 'SSH_CLIENT': '192.168.242.83 36850 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/dualipa', 'OLDPWD': '/home/dualipa', 'SSH_TTY': '/dev/pts/3', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install:/home/dualipa/mark1/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'dualipa', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.242.83 36850 192.168.242.252 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages:/home/dualipa/pid_pilot_senior/build/pid_pilot_senior:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:/home/dualipa/mark1/install/robot1/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces'}, 'shell': False}
+[7.772763] (-) TimerEvent: {}
+[7.873375] (-) TimerEvent: {}
+[7.974010] (-) TimerEvent: {}
+[8.074574] (-) TimerEvent: {}
+[8.175148] (-) TimerEvent: {}
+[8.275722] (-) TimerEvent: {}
+[8.376293] (-) TimerEvent: {}
+[8.476943] (-) TimerEvent: {}
+[8.577585] (-) TimerEvent: {}
+[8.678182] (-) TimerEvent: {}
+[8.778772] (-) TimerEvent: {}
+[8.779652] (pid_pilot_senior) StdoutLine: {'line': b'running egg_info\n'}
+[8.783760] (pid_pilot_senior) StdoutLine: {'line': b'writing ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/PKG-INFO\n'}
+[8.784763] (pid_pilot_senior) StdoutLine: {'line': b'writing dependency_links to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/dependency_links.txt\n'}
+[8.785678] (pid_pilot_senior) StdoutLine: {'line': b'writing entry points to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/entry_points.txt\n'}
+[8.786295] (pid_pilot_senior) StdoutLine: {'line': b'writing requirements to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/requires.txt\n'}
+[8.786786] (pid_pilot_senior) StdoutLine: {'line': b'writing top-level names to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/top_level.txt\n'}
+[8.795023] (pid_pilot_senior) StdoutLine: {'line': b"reading manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'\n"}
+[8.799932] (pid_pilot_senior) StdoutLine: {'line': b"writing manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'\n"}
+[8.800536] (pid_pilot_senior) StdoutLine: {'line': b'running build\n'}
+[8.800973] (pid_pilot_senior) StdoutLine: {'line': b'running build_py\n'}
+[8.802652] (pid_pilot_senior) StdoutLine: {'line': b'copying pid_pilot_senior/pid_pilot_senior.py -> /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior\n'}
+[8.805645] (pid_pilot_senior) StdoutLine: {'line': b'running install\n'}
+[8.806728] (pid_pilot_senior) StdoutLine: {'line': b'running install_lib\n'}
+[8.809831] (pid_pilot_senior) StdoutLine: {'line': b'creating /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.810373] (pid_pilot_senior) StdoutLine: {'line': b'copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/pid_pilot_senior.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.811212] (pid_pilot_senior) StdoutLine: {'line': b'copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.812898] (pid_pilot_senior) StdoutLine: {'line': b'copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test3.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.814154] (pid_pilot_senior) StdoutLine: {'line': b'copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test2.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.815363] (pid_pilot_senior) StdoutLine: {'line': b'copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/rand.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.816549] (pid_pilot_senior) StdoutLine: {'line': b'copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/__init__.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.817280] (pid_pilot_senior) StdoutLine: {'line': b'copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test4.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior\n'}
+[8.820215] (pid_pilot_senior) StdoutLine: {'line': b'byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/pid_pilot_senior.py to pid_pilot_senior.cpython-310.pyc\n'}
+[8.829050] (pid_pilot_senior) StdoutLine: {'line': b'byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test.py to test.cpython-310.pyc\n'}
+[8.830793] (pid_pilot_senior) StdoutLine: {'line': b'byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test3.py to test3.cpython-310.pyc\n'}
+[8.832025] (pid_pilot_senior) StdoutLine: {'line': b'byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test2.py to test2.cpython-310.pyc\n'}
+[8.834238] (pid_pilot_senior) StdoutLine: {'line': b'byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/rand.py to rand.cpython-310.pyc\n'}
+[8.835479] (pid_pilot_senior) StdoutLine: {'line': b'byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/__init__.py to __init__.cpython-310.pyc\n'}
+[8.836599] (pid_pilot_senior) StdoutLine: {'line': b'byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test4.py to test4.cpython-310.pyc\n'}
+[8.837862] (pid_pilot_senior) StdoutLine: {'line': b'running install_data\n'}
+[8.838387] (pid_pilot_senior) StdoutLine: {'line': b'copying resource/pid_pilot_senior -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index/packages\n'}
+[8.839156] (pid_pilot_senior) StdoutLine: {'line': b'copying package.xml -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/pid_pilot_senior\n'}
+[8.840658] (pid_pilot_senior) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.847300] (pid_pilot_senior) StdoutLine: {'line': b'Copying ../../build/pid_pilot_senior/pid_pilot_senior.egg-info to /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior-0.0.0-py3.10.egg-info\n'}
+[8.853902] (pid_pilot_senior) StdoutLine: {'line': b'running install_scripts\n'}
+[8.878922] (-) TimerEvent: {}
+[8.926060] (pid_pilot_senior) StdoutLine: {'line': b'Installing pid_pilot_senior script to /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/pid_pilot_senior\n'}
+[8.928000] (pid_pilot_senior) StdoutLine: {'line': b"writing list of installed files to '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/install.log'\n"}
+[8.979136] (-) TimerEvent: {}
+[9.052767] (pid_pilot_senior) CommandEnded: {'returncode': 0}
+[9.079606] (-) TimerEvent: {}
+[9.082282] (pid_pilot_senior) JobEnded: {'identifier': 'pid_pilot_senior', 'rc': 0}
+[9.085183] (-) EventReactorShutdown: {}

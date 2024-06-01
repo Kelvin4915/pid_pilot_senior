@@ -1,0 +1,42 @@
+[5.279s] Invoking command in '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior': PYTHONPATH=/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build
+[6.681s] running develop
+[7.540s] Removing /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid-pilot-senior.egg-link (link to .)
+[7.682s] Invoked command in '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior' returned '0': PYTHONPATH=/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build
+[7.691s] Invoking command in '/home/dualipa/pid_pilot_senior/src/pid_pilot_senior': PYTHONPATH=/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pid_pilot_senior build --build-base /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build install --record /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/install.log --single-version-externally-managed install_data --force
+[8.778s] running egg_info
+[8.782s] writing ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/PKG-INFO
+[8.783s] writing dependency_links to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/dependency_links.txt
+[8.784s] writing entry points to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/entry_points.txt
+[8.784s] writing requirements to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/requires.txt
+[8.785s] writing top-level names to ../../build/pid_pilot_senior/pid_pilot_senior.egg-info/top_level.txt
+[8.793s] reading manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'
+[8.798s] writing manifest file '../../build/pid_pilot_senior/pid_pilot_senior.egg-info/SOURCES.txt'
+[8.799s] running build
+[8.799s] running build_py
+[8.801s] copying pid_pilot_senior/pid_pilot_senior.py -> /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior
+[8.804s] running install
+[8.805s] running install_lib
+[8.808s] creating /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.808s] copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/pid_pilot_senior.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.809s] copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.811s] copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test3.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.812s] copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test2.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.813s] copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/rand.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.815s] copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/__init__.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.815s] copying /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build/lib/pid_pilot_senior/test4.py -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior
+[8.818s] byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/pid_pilot_senior.py to pid_pilot_senior.cpython-310.pyc
+[8.827s] byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test.py to test.cpython-310.pyc
+[8.829s] byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test3.py to test3.cpython-310.pyc
+[8.830s] byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test2.py to test2.cpython-310.pyc
+[8.832s] byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/rand.py to rand.cpython-310.pyc
+[8.833s] byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/__init__.py to __init__.cpython-310.pyc
+[8.835s] byte-compiling /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior/test4.py to test4.cpython-310.pyc
+[8.836s] running install_data
+[8.836s] copying resource/pid_pilot_senior -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/ament_index/resource_index/packages
+[8.837s] copying package.xml -> /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/share/pid_pilot_senior
+[8.839s] running install_egg_info
+[8.845s] Copying ../../build/pid_pilot_senior/pid_pilot_senior.egg-info to /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages/pid_pilot_senior-0.0.0-py3.10.egg-info
+[8.852s] running install_scripts
+[8.924s] Installing pid_pilot_senior script to /home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/pid_pilot_senior
+[8.926s] writing list of installed files to '/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/install.log'
+[9.051s] Invoked command in '/home/dualipa/pid_pilot_senior/src/pid_pilot_senior' returned '0': PYTHONPATH=/home/dualipa/pid_pilot_senior/build/pid_pilot_senior/prefix_override:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pid_pilot_senior build --build-base /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/build install --record /home/dualipa/pid_pilot_senior/build/pid_pilot_senior/install.log --single-version-externally-managed install_data --force
