@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROSIDL_TYPESUPPORT_INTROSPECTION_C_BUILDING_DLL_pplanner_interfaces -DROS_PACKAGE_NAME=\"pplanner_interfaces\"
 
-C_INCLUDES = -I/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_introspection_c -I/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
+C_INCLUDES = -I/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_typesupport_introspection_c -I/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_c -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c
 
 C_FLAGS = -fPIC -Wall -std=gnu11
 

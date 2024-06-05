@@ -1,0 +1,3 @@
+position = []
+
+print(len(position))

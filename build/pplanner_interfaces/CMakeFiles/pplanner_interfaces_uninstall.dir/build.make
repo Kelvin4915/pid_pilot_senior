@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dualipa/pid_pilot_senior/src/pplanner_interfaces
+CMAKE_SOURCE_DIR = /home/kelvin/pid_pilot_senior/src/pplanner_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dualipa/pid_pilot_senior/build/pplanner_interfaces
+CMAKE_BINARY_DIR = /home/kelvin/pid_pilot_senior/build/pplanner_interfaces
 
 # Utility rule file for pplanner_interfaces_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/pplanner_interfaces_uninstall.dir/compiler_depend.make
 include CMakeFiles/pplanner_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/pplanner_interfaces_uninstall:
-	/usr/bin/cmake -P /home/dualipa/pid_pilot_senior/build/pplanner_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 pplanner_interfaces_uninstall: CMakeFiles/pplanner_interfaces_uninstall
 pplanner_interfaces_uninstall: CMakeFiles/pplanner_interfaces_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/pplanner_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/pplanner_interfaces_uninstall.dir/clean
 
 CMakeFiles/pplanner_interfaces_uninstall.dir/depend:
-	cd /home/dualipa/pid_pilot_senior/build/pplanner_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dualipa/pid_pilot_senior/src/pplanner_interfaces /home/dualipa/pid_pilot_senior/src/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles/pplanner_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kelvin/pid_pilot_senior/build/pplanner_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles/pplanner_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pplanner_interfaces_uninstall.dir/depend
 

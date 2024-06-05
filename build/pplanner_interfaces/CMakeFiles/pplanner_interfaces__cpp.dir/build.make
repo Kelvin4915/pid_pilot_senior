@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dualipa/pid_pilot_senior/src/pplanner_interfaces
+CMAKE_SOURCE_DIR = /home/kelvin/pid_pilot_senior/src/pplanner_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dualipa/pid_pilot_senior/build/pplanner_interfaces
+CMAKE_BINARY_DIR = /home/kelvin/pid_pilot_senior/build/pplanner_interfaces
 
 # Utility rule file for pplanner_interfaces__cpp.
 
@@ -102,8 +102,8 @@ rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplan
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplanner_interfaces/msg/PathGridset.idl
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplanner_interfaces/msg/ArucoData.idl
 rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp: rosidl_adapter/pplanner_interfaces/msg/ArucoDataset.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dualipa/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/dualipa/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_grid__builder.hpp: rosidl_generator_cpp/pplanner_interfaces/msg/path_grid.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/pplanner_interfaces/msg/detail/path_grid__builder.hpp
@@ -179,6 +179,6 @@ CMakeFiles/pplanner_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/pplanner_interfaces__cpp.dir/clean
 
 CMakeFiles/pplanner_interfaces__cpp.dir/depend:
-	cd /home/dualipa/pid_pilot_senior/build/pplanner_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dualipa/pid_pilot_senior/src/pplanner_interfaces /home/dualipa/pid_pilot_senior/src/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces /home/dualipa/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles/pplanner_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/kelvin/pid_pilot_senior/build/pplanner_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/src/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces /home/kelvin/pid_pilot_senior/build/pplanner_interfaces/CMakeFiles/pplanner_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pplanner_interfaces__cpp.dir/depend
 

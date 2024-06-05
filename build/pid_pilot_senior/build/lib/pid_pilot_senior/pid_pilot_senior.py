@@ -52,10 +52,10 @@ class PidPilotSenior(Node):
         self.acceleration = []
         
         # PID variables
-        self.Kp = 10
+        self.Kp = 0.5
         self.Ki = 0
         self.Kd = 0
-        self.Kp_theta = 0.5
+        self.Kp_theta = 0
         self.Ki_theta = 0
         self.Kd_theta = 0
         self.pid_reference_counter = 0
@@ -281,11 +281,12 @@ class PidPilotSenior(Node):
                     self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
                     self.time_check_start = time.time()
                     self.time_check_inter = time.time()
-                    self.position_check = self.actual_position[:]
+                    self.position_check = self.actual_position[:1]
+                    self.orientation_check = self.actual_position[2]
+                    self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
+                    self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
 
-                    while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position == self.position_check)):
-                        self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
-                        self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
+                    while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position == self.position_check) and ((self.orientation_check - 3) > self.actual_position[2] > (self.orientation_check + 3))):
                         self.time_check_inter = time.time()
 
                     self.pid_reference_counter = self.pid_reference_counter + 1
@@ -293,7 +294,8 @@ class PidPilotSenior(Node):
             # self.get_logger().info("position " + str(len(self.position)))
             # self.get_logger().info("velocity " + str(len(self.velocity)))
             # self.get_logger().info("acceleration " + str(len(self.acceleration)))
-
+            self.servo_motor_left.ChangeDutyCycle(0)
+            self.servo_motor_right.ChangeDutyCycle(0)
 
 def main(args=None):
     rclpy.init(args=args)
