@@ -4,3 +4,6 @@ source;share/pid_pilot_senior/hook/pythonpath.sh
 source;share/pid_pilot_senior/hook/ament_prefix_path.ps1
 source;share/pid_pilot_senior/hook/ament_prefix_path.dsv
 source;share/pid_pilot_senior/hook/ament_prefix_path.sh
+source;../../build/pid_pilot_senior/share/pid_pilot_senior/hook/pythonpath_develop.ps1
+source;../../build/pid_pilot_senior/share/pid_pilot_senior/hook/pythonpath_develop.dsv
+source;../../build/pid_pilot_senior/share/pid_pilot_senior/hook/pythonpath_develop.sh

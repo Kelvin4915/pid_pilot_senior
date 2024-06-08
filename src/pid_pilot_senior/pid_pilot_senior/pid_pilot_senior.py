@@ -55,7 +55,7 @@ class PidPilotSenior(Node):
         self.Kp = 0.5
         self.Ki = 0
         self.Kd = 0
-        self.Kp_theta = 0
+        self.Kp_theta = 0.5
         self.Ki_theta = 0
         self.Kd_theta = 0
         self.pid_reference_counter = 0
@@ -86,12 +86,12 @@ class PidPilotSenior(Node):
         self.Phi_dot_R_range_max =  0.68 * 2 * np.pi # INSERT ACTUAL VALUE (Rad/s)
         self.Phi_dot_R_range = np.array([self.Phi_dot_R_range_min, self.Phi_dot_R_range_max])
 
-        self.L_range_actual_min = 6.0 # INSERT ACTUAL VALUE
-        self.L_range_actual_max = 9.0 # INSERT ACTUAL VALUE
+        self.L_range_actual_min = 7.4 # INSERT ACTUAL VALUE
+        self.L_range_actual_max = 7.6 # INSERT ACTUAL VALUE
         self.L_range_actual = np.array([self.L_range_actual_min, self.L_range_actual_max])
 
-        self.R_range_actual_min = 9.0 # INSERT ACTUAL VALUE
-        self.R_range_actual_max = 6.0 # INSERT ACTUAL VALUE
+        self.R_range_actual_min = 7.6 # INSERT ACTUAL VALUE
+        self.R_range_actual_max = 7.4 # INSERT ACTUAL VALUE
         self.R_range_actual = np.array([self.R_range_actual_min, self.R_range_actual_max])
 
         self.Phi_dot_L_act = 0.0
@@ -257,7 +257,8 @@ class PidPilotSenior(Node):
                     # self.get_logger().info("PID_velocity = " + str(PID_velocity))
                     # time.sleep(1)
 
-                    self.Va = self.pixel_to_cm * (math.sqrt((PID_velocity[0])**2 + (PID_velocity[1])**2 ))
+                   # self.Va = self.pixel_to_cm * (math.sqrt((PID_velocity[0])**2 + (PID_velocity[1])**2 ))
+                    self.Va = 0
                     self.Theta_dot = PID_velocity[2]
 
                     self.Phi_dot_L = (1/self.r)*(self.Va - ((self.Theta_dot * self.S)/2))
@@ -286,8 +287,18 @@ class PidPilotSenior(Node):
                     self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
                     self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
 
-                    while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position == self.position_check) and ((self.orientation_check - 3) > self.actual_position[2] > (self.orientation_check + 3))):
-                        self.time_check_inter = time.time()
+                    if ((self.actual_position[:1] == self.position_check)):
+                        self.get_logger().info(" position check passed")
+
+                    if (-0.5  >= self.E[1][2] or self.E[1][2]>= 0.5):
+                        self.get_logger().info("orientation check passed")
+                    self.get_logger().info(" E[1][2] = " + str(self.E[1][2]))
+                   # while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and ((self.orientation_check - 0.5) <= self.actual_position[2] <= (self.orientation_check + 0.5))):
+                       # self.time_check_inter = time.time()
+                    while((0.5  >= abs(self.position[self.pid_reference_counter][2]) - abs(self.actual_position[2]))): #or ((self.position[self.pid_reference_counter][2] - self.actual_position[2]) >= 0.5)):
+                        self.get_logger().info(" instde orientation loop" + str(abs(self.position[self.pid_reference_counter][2]) - abs(self.actual_position[2])))
+                        #self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
+                        #self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
 
                     self.pid_reference_counter = self.pid_reference_counter + 1
 

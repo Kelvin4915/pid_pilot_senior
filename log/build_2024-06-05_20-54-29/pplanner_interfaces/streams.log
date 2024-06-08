@@ -1,0 +1,306 @@
+[1.195s] Invoking command in '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble /usr/bin/cmake /home/dualipa/pid_pilot_senior/src/pplanner_interfaces -DCMAKE_INSTALL_PREFIX=/home/dualipa/pid_pilot_senior/install/pplanner_interfaces
+[1.455s] -- The C compiler identification is GNU 11.4.0
+[1.709s] -- The CXX compiler identification is GNU 11.4.0
+[1.737s] -- Detecting C compiler ABI info
+[2.041s] -- Detecting C compiler ABI info - done
+[2.066s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.067s] -- Detecting C compile features
+[2.068s] -- Detecting C compile features - done
+[2.080s] -- Detecting CXX compiler ABI info
+[2.420s] -- Detecting CXX compiler ABI info - done
+[2.446s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.447s] -- Detecting CXX compile features
+[2.449s] -- Detecting CXX compile features - done
+[2.476s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.344s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.928s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[3.953s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.018s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.355s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.756s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[6.632s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.711s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[7.818s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[7.837s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[7.957s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[7.957s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[7.957s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[7.958s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[8.060s] -- Found PythonExtra: .so  
+[8.245s] -- Configuring done
+[8.418s] -- Generating done
+[8.431s] -- Build files have been written to: /home/dualipa/pid_pilot_senior/build/pplanner_interfaces
+[8.451s] Invoked command in '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble /usr/bin/cmake /home/dualipa/pid_pilot_senior/src/pplanner_interfaces -DCMAKE_INSTALL_PREFIX=/home/dualipa/pid_pilot_senior/install/pplanner_interfaces
+[8.460s] Invoking command in '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble /usr/bin/cmake --build /home/dualipa/pid_pilot_senior/build/pplanner_interfaces -- -j4 -l4
+[8.621s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.668s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[8.699s] [  3%] Built target ament_cmake_python_copy_pplanner_interfaces
+[12.038s] running egg_info
+[12.044s] creating pplanner_interfaces.egg-info
+[12.046s] writing pplanner_interfaces.egg-info/PKG-INFO
+[12.048s] writing dependency_links to pplanner_interfaces.egg-info/dependency_links.txt
+[12.050s] writing top-level names to pplanner_interfaces.egg-info/top_level.txt
+[12.053s] writing manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[12.065s] reading manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[12.067s] writing manifest file 'pplanner_interfaces.egg-info/SOURCES.txt'
+[12.208s] [  3%] Built target ament_cmake_python_build_pplanner_interfaces_egg
+[12.863s] [  3%] Built target pplanner_interfaces__cpp
+[12.975s] [  5%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.039s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[13.307s] [  9%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.458s] [ 10%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/path_grid__functions.c.o[0m
+[14.087s] [ 12%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/path_gridset__functions.c.o[0m
+[14.706s] [ 14%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_data__functions.c.o[0m
+[15.328s] [ 16%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_c.dir/rosidl_generator_c/pplanner_interfaces/msg/detail/aruco_dataset__functions.c.o[0m
+[15.781s] [ 18%] [32m[1mLinking C shared library libpplanner_interfaces__rosidl_generator_c.so[0m
+[16.227s] [ 18%] Built target pplanner_interfaces__rosidl_generator_c
+[16.352s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[16.542s] [ 21%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/path_grid__type_support.cpp.o[0m
+[17.744s] [ 23%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_grid__type_support.cpp.o[0m
+[18.087s] [ 25%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_grid__type_support.cpp.o[0m
+[20.036s] [ 27%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/path_gridset__type_support.cpp.o[0m
+[21.330s] [ 29%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_grid__type_support_c.cpp.o[0m
+[22.509s] [ 30%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/path_gridset__type_support.cpp.o[0m
+[22.903s] [ 32%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/path_gridset__type_support.cpp.o[0m
+[23.352s] [ 34%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_data__type_support.cpp.o[0m
+[25.505s] [ 36%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/path_gridset__type_support_c.cpp.o[0m
+[26.424s] [ 38%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o[0m
+[26.976s] [ 40%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp.o[0m
+[27.866s] [ 41%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_data__type_support.cpp.o[0m
+[29.078s] [ 43%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_data__type_support_c.cpp.o[0m
+[29.637s] [ 45%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_cpp.so[0m
+[29.994s] [ 45%] Built target pplanner_interfaces__rosidl_typesupport_cpp
+[30.051s] [ 47%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[31.287s] [ 49%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp.o[0m
+[32.550s] [ 50%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pplanner_interfaces/msg/detail/dds_fastrtps/aruco_dataset__type_support.cpp.o[0m
+[32.873s] [ 52%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support_c.cpp.o[0m
+[34.199s] [ 54%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_grid__type_support.c.o[0m
+[34.414s] [ 56%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/path_gridset__type_support.c.o[0m
+[34.701s] [ 58%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_data__type_support.c.o[0m
+[35.195s] [ 60%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c.o[0m
+[35.740s] [ 61%] [32m[1mLinking C shared library libpplanner_interfaces__rosidl_typesupport_introspection_c.so[0m
+[36.025s] [ 63%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[36.143s] [ 63%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c
+[36.262s] [ 65%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[36.743s] [ 67%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[36.872s] [ 67%] Built target pplanner_interfaces__rosidl_typesupport_introspection_cpp
+[37.512s] [ 67%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c
+[37.652s] [ 69%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[38.106s] [ 69%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_cpp
+[38.579s] [ 70%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_grid__type_support.cpp.o[0m
+[38.581s] [ 72%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/path_gridset__type_support.cpp.o[0m
+[38.583s] [ 74%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_data__type_support.cpp.o[0m
+[38.589s] [ 76%] [32mBuilding CXX object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/pplanner_interfaces/msg/aruco_dataset__type_support.cpp.o[0m
+[38.804s] [ 78%] [32m[1mLinking CXX shared library libpplanner_interfaces__rosidl_typesupport_c.so[0m
+[39.194s] [ 78%] Built target pplanner_interfaces__rosidl_typesupport_c
+[39.388s] [ 78%] Built target pplanner_interfaces
+[39.548s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[41.863s] [ 80%] Built target pplanner_interfaces__py
+[42.070s] [ 81%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_path_grid_s.c.o[0m
+[42.078s] [ 85%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_data_s.c.o[0m
+[42.080s] [ 85%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_path_gridset_s.c.o[0m
+[42.089s] [ 87%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_generator_py.dir/rosidl_generator_py/pplanner_interfaces/msg/_aruco_dataset_s.c.o[0m
+[43.389s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/libpplanner_interfaces__rosidl_generator_py.so[0m
+[43.572s] [ 89%] Built target pplanner_interfaces__rosidl_generator_py
+[43.661s] [ 92%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[43.662s] [ 92%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[43.664s] [ 94%] [32mBuilding C object CMakeFiles/pplanner_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[44.503s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[44.547s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[44.652s] [100%] [32m[1mLinking C shared library rosidl_generator_py/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[44.887s] [100%] Built target pplanner_interfaces__rosidl_typesupport_c__pyext
+[44.938s] [100%] Built target pplanner_interfaces__rosidl_typesupport_introspection_c__pyext
+[45.045s] [100%] Built target pplanner_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[45.152s] Invoked command in '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble /usr/bin/cmake --build /home/dualipa/pid_pilot_senior/build/pplanner_interfaces -- -j4 -l4
+[46.079s] Invoking command in '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble /usr/bin/cmake --install /home/dualipa/pid_pilot_senior/build/pplanner_interfaces
+[46.106s] -- Install configuration: ""
+[46.107s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/rosidl_interfaces/pplanner_interfaces
+[46.109s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[46.109s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[46.110s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.h
+[46.111s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.h
+[46.112s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[46.113s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.c
+[46.114s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.h
+[46.115s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.h
+[46.117s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__functions.h
+[46.118s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.h
+[46.119s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.h
+[46.120s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.h
+[46.121s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.h
+[46.123s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__functions.c
+[46.124s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.h
+[46.125s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.h
+[46.126s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.h
+[46.127s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.c
+[46.128s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__functions.c
+[46.129s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__functions.h
+[46.131s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.h
+[46.132s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.h
+[46.133s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_generator_c__visibility_control.h
+[46.134s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.h
+[46.136s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.sh
+[46.137s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/library_path.dsv
+[46.138s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_c.so
+[46.141s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_c.so" to ""
+[46.142s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[46.142s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[46.142s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[46.143s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_c.h
+[46.144s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_c.h
+[46.145s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_c.h
+[46.147s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_c.h
+[46.148s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[46.149s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so
+[46.152s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[46.152s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[46.153s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[46.153s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[46.154s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[46.155s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_c.h
+[46.156s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.c
+[46.158s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.c
+[46.159s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_c.h
+[46.160s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_c.h
+[46.161s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.c
+[46.163s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.c
+[46.164s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_c.h
+[46.165s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_c.so
+[46.168s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[46.168s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_c.so
+[46.171s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_c.so" to ""
+[46.171s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[46.172s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[46.172s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_gridset.hpp
+[46.173s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_dataset.hpp
+[46.174s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[46.174s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__builder.hpp
+[46.176s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__traits.hpp
+[46.177s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__traits.hpp
+[46.178s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__struct.hpp
+[46.179s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__builder.hpp
+[46.180s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__struct.hpp
+[46.181s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__traits.hpp
+[46.183s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__builder.hpp
+[46.184s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__struct.hpp
+[46.185s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__struct.hpp
+[46.186s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__traits.hpp
+[46.187s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__builder.hpp
+[46.188s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/path_grid.hpp
+[46.189s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/aruco_data.hpp
+[46.191s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[46.191s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[46.191s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[46.192s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_fastrtps_cpp.hpp
+[46.193s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_fastrtps_cpp.hpp
+[46.194s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/dds_fastrtps
+[46.195s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_fastrtps_cpp.hpp
+[46.197s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_fastrtps_cpp.hpp
+[46.198s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[46.199s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[46.203s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[46.203s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces
+[46.204s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg
+[46.205s] -- Up-to-date: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail
+[46.205s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__rosidl_typesupport_introspection_cpp.hpp
+[46.206s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__rosidl_typesupport_introspection_cpp.hpp
+[46.207s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__type_support.cpp
+[46.208s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_dataset__type_support.cpp
+[46.210s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/aruco_data__type_support.cpp
+[46.211s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__type_support.cpp
+[46.212s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_grid__rosidl_typesupport_introspection_cpp.hpp
+[46.213s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/include/pplanner_interfaces/pplanner_interfaces/msg/detail/path_gridset__rosidl_typesupport_introspection_cpp.hpp
+[46.215s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so
+[46.218s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[46.219s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_cpp.so
+[46.221s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_typesupport_cpp.so" to ""
+[46.221s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.sh
+[46.223s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/pythonpath.dsv
+[46.224s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info
+[46.225s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[46.226s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[46.227s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[46.228s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[46.230s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces
+[46.230s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/libpplanner_interfaces__rosidl_generator_py.so
+[46.232s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_c.c
+[46.233s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg
+[46.234s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data.py
+[46.235s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset.py
+[46.236s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data_s.c
+[46.237s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset_s.c
+[46.238s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset.py
+[46.240s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid_s.c
+[46.241s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/__init__.py
+[46.242s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid.py
+[46.243s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset_s.c
+[46.244s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[46.246s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[46.247s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/_pplanner_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[46.248s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/__init__.py
+[46.250s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[46.251s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[46.417s] Listing '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces'...
+[46.418s] Compiling '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/__init__.py'...
+[46.419s] Listing '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg'...
+[46.419s] Compiling '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/__init__.py'...
+[46.420s] Compiling '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_data.py'...
+[46.421s] Compiling '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_aruco_dataset.py'...
+[46.422s] Compiling '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_grid.py'...
+[46.423s] Compiling '/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/msg/_path_gridset.py'...
+[46.442s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[46.444s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[46.446s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[46.450s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[46.452s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[46.456s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/local/lib/python3.10/dist-packages/pplanner_interfaces/pplanner_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[46.456s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_py.so
+[46.459s] -- Set runtime path of "/home/dualipa/pid_pilot_senior/install/pplanner_interfaces/lib/libpplanner_interfaces__rosidl_generator_py.so" to ""
+[46.460s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.idl
+[46.461s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.idl
+[46.462s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.idl
+[46.463s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.idl
+[46.465s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGrid.msg
+[46.466s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/PathGridset.msg
+[46.467s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoData.msg
+[46.468s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/msg/ArucoDataset.msg
+[46.469s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/package_run_dependencies/pplanner_interfaces
+[46.471s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/parent_prefix_path/pplanner_interfaces
+[46.472s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.sh
+[46.474s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/ament_prefix_path.dsv
+[46.475s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.sh
+[46.476s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/environment/path.dsv
+[46.477s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.bash
+[46.478s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.sh
+[46.480s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.zsh
+[46.481s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/local_setup.dsv
+[46.482s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/package.dsv
+[46.484s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/ament_index/resource_index/packages/pplanner_interfaces
+[46.485s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport.cmake
+[46.487s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cExport-noconfig.cmake
+[46.488s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[46.490s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[46.491s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[46.493s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[46.494s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport.cmake
+[46.496s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[46.497s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_cppExport.cmake
+[46.499s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[46.500s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[46.502s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[46.504s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[46.505s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport.cmake
+[46.507s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[46.508s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport.cmake
+[46.510s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/export_pplanner_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[46.511s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake-extras.cmake
+[46.512s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[46.514s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[46.515s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[46.517s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[46.518s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.519s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[46.521s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig.cmake
+[46.543s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/cmake/pplanner_interfacesConfig-version.cmake
+[46.545s] -- Installing: /home/dualipa/pid_pilot_senior/install/pplanner_interfaces/share/pplanner_interfaces/package.xml
+[46.559s] Invoked command in '/home/dualipa/pid_pilot_senior/build/pplanner_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/dualipa/pid_pilot_senior/install/pid_pilot_senior:/home/dualipa/mark1/install/robot1:/opt/ros/humble /usr/bin/cmake --install /home/dualipa/pid_pilot_senior/build/pplanner_interfaces
