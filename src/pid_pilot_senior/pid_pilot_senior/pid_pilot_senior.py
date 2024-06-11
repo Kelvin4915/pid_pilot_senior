@@ -180,18 +180,22 @@ class PidPilotSenior(Node):
                 for i in range(0, len(self.path_pid) - 1 ):
                     dx = self.path_pid[i+1][0] - self.path_pid[i][0]
                     dy = self.path_pid[i+1][1] - self.path_pid[i][1]
-                    if (dx == 0):
-                        if (dy > 0):
-                            orientation = math.pi / 2
-                        elif (dy < 0):
-                            orientation = (-1) * math.pi / 2
-                    elif (dy == 0):
-                        if (dx > 0):
-                            orientation = 0
-                        elif (dx < 0):
-                            orientation = math.pi
-                    else:
-                        orientation = math.atan(dy / dx)
+                    # if (dx == 0):
+                    #     if (dy > 0):
+                    #         orientation = math.pi / 2
+                    #     elif (dy < 0):
+                    #         orientation = (-1) * math.pi / 2
+                    # elif (dy == 0):
+                    #     if (dx > 0):
+                    #         orientation = 0
+                    #     elif (dx < 0):
+                    #         orientation = math.pi
+                    # else:
+
+                    orientation = math.atan2(dy / dx)
+                    if orientation < 0:
+                        orientation += 2 * math.pi
+
                     self.pid_function_local_path.append([self.path_pid[i][0],self.path_pid[i][1],orientation])
                 
                 
@@ -325,10 +329,10 @@ class PidPilotSenior(Node):
                         if self.orientation_reference_minimum < 0:
                             self.orientation_reference_minimum = self.orientation_reference_minimum + (2 * np.pi)
 
-                        while(self.orientation_reference_maximum < self.actual_position[2] or self.actual_position[2] < (self.orientation_reference_minimum)):
-                            # self.get_logger().info(" instde orientation loop" + str(abs(self.position[self.pid_reference_counter][2]) - abs(self.actual_position[2])))
-                            #self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
-                            #self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
+                        while(not (self.orientation_reference_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_reference_minimum))):
+                            self.get_logger().info(" orientation_reference_maximum" + str(self.orientation_reference_maximum))
+                            self.get_logger().info("orientation_reference_minimum= " + str(self.orientation_reference_minimum))
+                            self.get_logger().info("actual_position[2] = " + str(self.actual_position[2]))
                             self.get_logger().info("first loop correcting orientation")
 
                     self.pid_reference_counter = self.pid_reference_counter + 1
