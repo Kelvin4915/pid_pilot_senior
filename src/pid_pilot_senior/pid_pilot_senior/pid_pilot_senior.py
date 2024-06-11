@@ -122,6 +122,7 @@ class PidPilotSenior(Node):
         self.orientation_check_minimum = 0.0
         self.orientation_reference_maximum = 0.0
         self.orientation_reference_minimum = 0.0
+        self.reference_flag = 1000
 
         self.timercounter = 0
         self.old_time = 0
@@ -162,6 +163,26 @@ class PidPilotSenior(Node):
                 self.actual_position = [self.all_robots_data.dataset[i].y_data, self.all_robots_data.dataset[i].x_data, self.all_robots_data.dataset[i].orientation_data]
                 # self.get_logger().info("robot data: " + str(self.actual_position))
                 break
+
+    def loop_break_condition(self,ref_val):
+        if self.reference_flag != self.pid_reference_counter:
+            self.reference_flag = self.pid_reference_counter    
+            reference_value = ref_val
+            boundary_flag = 0
+            self.orientation_reference_maximum = reference_value + self.orientation_buffer
+            self.orientation_reference_minimum = reference_value - self.orientation_buffer
+            if self.orientation_reference_maximum >= 2 * np.pi:
+                self.orientation_reference_maximum = self.orientation_reference_maximum - (2 * np.pi)
+                boundary_flag = 1
+            if self.orientation_reference_minimum < 0:
+                self.orientation_reference_minimum = self.orientation_reference_minimum + (2 * np.pi)
+                boundary_flag = 1
+        
+        if boundary_flag == 0:
+            return (self.actual_position[2] < self.orientation_reference_maximum) and (self.actual_position[2] > self.orientation_reference_minimum)
+        else:
+            return (self.actual_position[2] < self.orientation_reference_maximum) or (self.actual_position[2] > self.orientation_reference_minimum)
+
 
     def pid_function(self):
         
@@ -317,18 +338,21 @@ class PidPilotSenior(Node):
                         self.get_logger().info("orientation check passed")
                     self.get_logger().info(" E[1][2] = " + str(self.E[1][2]))
 
-                    while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.orientation_check_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_check_minimum))):
-                       self.time_check_inter = time.time()
+                    if self.pid_reference_counter > 0:
+                        # while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.loop_break_condition(self.actual_position[2]))):
+                        while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.orientation_check_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_check_minimum))):
+                            self.time_check_inter = time.time()
 
 
                     if self.pid_reference_counter == 0:  
-                        self.orientation_reference_maximum = self.position[self.pid_reference_counter][2] + self.orientation_buffer
-                        self.orientation_reference_minimum = self.position[self.pid_reference_counter][2] - self.orientation_buffer
-                        if self.orientation_reference_maximum >= 2 * np.pi:
-                            self.orientation_reference_maximum = self.orientation_reference_maximum - (2 * np.pi)
-                        if self.orientation_reference_minimum < 0:
-                            self.orientation_reference_minimum = self.orientation_reference_minimum + (2 * np.pi)
+                        # self.orientation_reference_maximum = self.position[self.pid_reference_counter][2] + self.orientation_buffer
+                        # self.orientation_reference_minimum = self.position[self.pid_reference_counter][2] - self.orientation_buffer
+                        # if self.orientation_reference_maximum >= 2 * np.pi:
+                        #     self.orientation_reference_maximum = self.orientation_reference_maximum - (2 * np.pi)
+                        # if self.orientation_reference_minimum < 0:
+                        #     self.orientation_reference_minimum = self.orientation_reference_minimum + (2 * np.pi)
 
+                        # while(not self.loop_break_condition(self.position[self.pid_reference_counter][2])):
                         while(not (self.orientation_reference_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_reference_minimum))):
                             self.get_logger().info(" orientation_reference_maximum" + str(self.orientation_reference_maximum))
                             self.get_logger().info("orientation_reference_minimum= " + str(self.orientation_reference_minimum))
