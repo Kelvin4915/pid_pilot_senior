@@ -52,7 +52,7 @@ class PidPilotSenior(Node):
         self.acceleration = []
         
         # PID variables
-        self.Kp = 100
+        self.Kp = 10
         self.Ki = 0
         self.Kd = 0
         self.Kp_theta = 0.5
@@ -75,8 +75,6 @@ class PidPilotSenior(Node):
         self.Phi_dot_R = 0.0
         self.r = 6.5 # INSERT ACTUAL VALUE (CM)
         self.S = 11.5 # INSERT ACTUAL VALUE (CM)
-        self.Phi_dot_L_act = 0.0
-        self.Phi_dot_R_act = 0.0
 
         self.Phi_dot_L_range_min = -0.68 * 2 * np.pi # INSERT ACTUAL VALUE (Rad/s)
         self.Phi_dot_L_range_max =  0.68 * 2 * np.pi # INSERT ACTUAL VALUE (Rad/s)
@@ -86,16 +84,26 @@ class PidPilotSenior(Node):
         self.Phi_dot_R_range_max =  0.68 * 2 * np.pi # INSERT ACTUAL VALUE (Rad/s)
         self.Phi_dot_R_range = np.array([self.Phi_dot_R_range_min, self.Phi_dot_R_range_max])
 
-        self.L_range_actual_min = 7.4 # INSERT ACTUAL VALUE
-        self.L_range_actual_max = 7.6 # INSERT ACTUAL VALUE
-        self.L_range_actual = np.array([self.L_range_actual_min, self.L_range_actual_max])
+        self.L_range_actual_min_rot = 7.4 # INSERT ACTUAL VALUE
+        self.L_range_actual_max_rot = 7.6 # INSERT ACTUAL VALUE
+        self.L_range_actual_rot = np.array([self.L_range_actual_min_rot, self.L_range_actual_max_rot])
 
-        self.R_range_actual_min = 7.6 # INSERT ACTUAL VALUE
-        self.R_range_actual_max = 7.4 # INSERT ACTUAL VALUE
-        self.R_range_actual = np.array([self.R_range_actual_min, self.R_range_actual_max])
+        self.R_range_actual_min_rot = 7.6 # INSERT ACTUAL VALUE
+        self.R_range_actual_max_rot = 7.4 # INSERT ACTUAL VALUE
+        self.R_range_actual_rot = np.array([self.R_range_actual_min_rot, self.R_range_actual_max_rot])
 
-        self.Phi_dot_L_act = 0.0
-        self.Phi_dot_R_act = 0.0
+        self.L_range_actual_min_lin = 6 # INSERT ACTUAL VALUE
+        self.L_range_actual_max_lin = 8 # INSERT ACTUAL VALUE
+        self.L_range_actual_lin = np.array([self.L_range_actual_min_lin, self.L_range_actual_max_lin])
+
+        self.R_range_actual_min_lin = 8 # INSERT ACTUAL VALUE
+        self.R_range_actual_max_lin = 6 # INSERT ACTUAL VALUE
+        self.R_range_actual_lin = np.array([self.R_range_actual_min_lin, self.R_range_actual_max_lin])
+
+        self.Phi_dot_L_act_rot = 0.0
+        self.Phi_dot_R_act_rot = 0.0
+        self.Phi_dot_L_act_lin = 0.0
+        self.Phi_dot_R_act_lin = 0.0
 
         # GPIO Setup
         GPIO.setmode(GPIO.BCM)
@@ -310,9 +318,6 @@ class PidPilotSenior(Node):
                     self.Phi_dot_L = (1/self.r)*(self.Va - ((self.Theta_dot * self.S)/2))
                     self.Phi_dot_R = (1/self.r)*(self.Va + ((self.Theta_dot * self.S)/2))
 
-                    self.Phi_dot_L_act = np.interp(self.Phi_dot_L, self.Phi_dot_L_range, self.L_range_actual)
-                    self.Phi_dot_R_act = np.interp(self.Phi_dot_R, self.Phi_dot_R_range, self.R_range_actual)
-                    
                     self.time_check_start = time.time()
                     self.time_check_inter = time.time()
                     self.position_check = self.actual_position[:1]
@@ -323,9 +328,6 @@ class PidPilotSenior(Node):
                     if self.orientation_check_minimum < 0:
                         self.orientation_check_minimum = self.orientation_check_minimum + (2 * np.pi)
                     
-                    self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act)
-                    self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
-
                     self.get_logger().info("counter number " + str(self.pid_reference_counter))
                     self.get_logger().info("Va = " + str(self.Va))
                     self.get_logger().info("Theta_dot = " + str(self.Theta_dot))
@@ -348,6 +350,13 @@ class PidPilotSenior(Node):
                     self.get_logger().info(" E[1][2] = " + str(self.E[1][2]))
 
                     if self.pid_reference_counter > 0:
+                        self.Phi_dot_L_act_lin = np.interp(self.Phi_dot_L, self.Phi_dot_L_range, self.L_range_actual_lin)
+                        self.Phi_dot_R_act_lin = np.interp(self.Phi_dot_R, self.Phi_dot_R_range, self.R_range_actual_lin)
+
+
+                        self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act_lin)
+                        self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act_lin)
+                    
                         #pass
                         #while(((self.time_check_inter - self.time_check_start) < 5) and ( self.actual_position[:1] == self.position_check ) and (self.loop_break_condition(self.actual_position[2]))):
                         while(self.actual_position[:1] == self.position_check):
@@ -356,6 +365,13 @@ class PidPilotSenior(Node):
 
 
                     if self.pid_reference_counter == 0:  
+                        self.Phi_dot_L_act_rot = np.interp(self.Phi_dot_L, self.Phi_dot_L_range, self.L_range_actual_rot)
+                        self.Phi_dot_R_act_rot = np.interp(self.Phi_dot_R, self.Phi_dot_R_range, self.R_range_actual_rot)
+
+
+                        self.servo_motor_left.ChangeDutyCycle(self.Phi_dot_L_act_rot)
+                        self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act_rot)
+                    
                         # self.orientation_reference_maximum = self.position[self.pid_reference_counter][2] + self.orientation_buffer
                         # self.orientation_reference_minimum = self.position[self.pid_reference_counter][2] - self.orientation_buffer
                         # if self.orientation_reference_maximum >= 2 * np.pi:
