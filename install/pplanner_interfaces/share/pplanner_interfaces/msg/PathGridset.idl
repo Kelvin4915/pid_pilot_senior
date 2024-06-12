@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from pplanner_interfaces/msg/PathGridset.msg
+// generated code does not contain a copyright notice
+
+#include "pplanner_interfaces/msg/PathGrid.idl"
+
+module pplanner_interfaces {
+  module msg {
+    struct PathGridset {
+      sequence<pplanner_interfaces::msg::PathGrid> path;
+    };
+  };
+};

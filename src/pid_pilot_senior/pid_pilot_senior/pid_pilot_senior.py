@@ -122,8 +122,8 @@ class PidPilotSenior(Node):
         self.orientation_check_minimum = 0.0
         self.orientation_reference_maximum = 0.0
         self.orientation_reference_minimum = 0.0
-        self.reference_flag = 1000
-
+        self.reference_flag = 100
+        self.boundary_flag = 100
         self.timercounter = 0
         self.old_time = 0
         self.new_time = 0
@@ -165,20 +165,29 @@ class PidPilotSenior(Node):
                 break
 
     def loop_break_condition(self,ref_val):
+        #self.get_logger().info("reference flag " + str(self.reference_flag))
         if self.reference_flag != self.pid_reference_counter:
             self.reference_flag = self.pid_reference_counter    
             reference_value = ref_val
-            boundary_flag = 0
+            self.boundary_flag = 0
             self.orientation_reference_maximum = reference_value + self.orientation_buffer
             self.orientation_reference_minimum = reference_value - self.orientation_buffer
             if self.orientation_reference_maximum >= 2 * np.pi:
                 self.orientation_reference_maximum = self.orientation_reference_maximum - (2 * np.pi)
-                boundary_flag = 1
+                self.boundary_flag = 1
             if self.orientation_reference_minimum < 0:
                 self.orientation_reference_minimum = self.orientation_reference_minimum + (2 * np.pi)
-                boundary_flag = 1
-        
-        if boundary_flag == 0:
+                self.boundary_flag = 1
+
+        self.get_logger().info("reference orientation" + str(self.position[self.pid_reference_counter][2]/np.pi))
+        #self.get_logger().info("orientation_reference_maximum" + str(self.orientation_reference_maximum))
+        #self.get_logger().info("orientation_reference_minimum= " + str(self.orientation_reference_minimum))
+        self.get_logger().info("actual_position[2] = " + str(self.actual_position[2]/np.pi))
+        #self.get_logger().info("first loop correcting orientation")
+        self.get_logger().info("x diff" + str(self.path_pid[1][0] - self.path_pid[0][0]))
+        self.get_logger().info("y diff" + str(- self.path_pid[1][1] + self.path_pid[0][1]))
+
+        if self.boundary_flag == 0:
             return (self.actual_position[2] < self.orientation_reference_maximum) and (self.actual_position[2] > self.orientation_reference_minimum)
         else:
             return (self.actual_position[2] < self.orientation_reference_maximum) or (self.actual_position[2] > self.orientation_reference_minimum)
@@ -199,8 +208,8 @@ class PidPilotSenior(Node):
                 # self.pid_function_local_path = path_pid[0: len(path_pid) - 2]
                 self.pid_function_local_path = []
                 for i in range(0, len(self.path_pid) - 1 ):
-                    dx = self.path_pid[i+1][0] - self.path_pid[i][0]
-                    dy = self.path_pid[i+1][1] - self.path_pid[i][1]
+                    dx = self.path_pid[i+1][1] - self.path_pid[i][1]
+                    dy = self.path_pid[i][0] - self.path_pid[i+1][0]
                     # if (dx == 0):
                     #     if (dy > 0):
                     #         orientation = math.pi / 2
@@ -213,7 +222,7 @@ class PidPilotSenior(Node):
                     #         orientation = math.pi
                     # else:
 
-                    orientation = math.atan2(dy / dx)
+                    orientation = math.atan2(dy, dx)
                     if orientation < 0:
                         orientation += 2 * math.pi
 
@@ -294,8 +303,8 @@ class PidPilotSenior(Node):
                     # self.get_logger().info("PID_velocity = " + str(PID_velocity))
                     # time.sleep(1)
 
-                   # self.Va = self.pixel_to_cm * (math.sqrt((PID_velocity[0])**2 + (PID_velocity[1])**2 ))
-                    self.Va = 0
+                    self.Va = self.pixel_to_cm * (math.sqrt((PID_velocity[0])**2 + (PID_velocity[1])**2 ))
+                    #self.Va = 0
                     self.Theta_dot = PID_velocity[2]
 
                     self.Phi_dot_L = (1/self.r)*(self.Va - ((self.Theta_dot * self.S)/2))
@@ -318,29 +327,30 @@ class PidPilotSenior(Node):
                     self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
 
                     self.get_logger().info("counter number " + str(self.pid_reference_counter))
-                    self.get_logger().info("Va = " + str(self.Va))
-                    self.get_logger().info("Theta_dot = " + str(self.Theta_dot))
-                    self.get_logger().info("instantaneous_position_data = " + str(self.instantaneous_position_data))
-                    self.get_logger().info("x error = " + str(self.E[1][0]))
-                    self.get_logger().info("y error = " + str(self.E[1][1]))
+                    #self.get_logger().info("Va = " + str(self.Va))
+                    #self.get_logger().info("Theta_dot = " + str(self.Theta_dot))
+                    #self.get_logger().info("instantaneous_position_data = " + str(self.instantaneous_position_data))
+                    #self.get_logger().info("x error = " + str(self.E[1][0]))
+                    #self.get_logger().info("y error = " + str(self.E[1][1]))
                     self.get_logger().info("theta error = " + str(self.E[1][2]))
-                    self.get_logger().info("theta dot = " + str(self.Theta_dot))
-                    self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
-                    self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
-                    self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
-                    self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
+                    #self.get_logger().info("theta dot = " + str(self.Theta_dot))
+                    #self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
+                    #self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
+                    #self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
+                    #self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
 
 
-                    if ((self.actual_position[:1] == self.position_check)):
+                    """if ((self.actual_position[:1] == self.position_check)):
                         self.get_logger().info(" position check passed")
 
                     if (-0.5  >= self.E[1][2] or self.E[1][2]>= 0.5):
                         self.get_logger().info("orientation check passed")
                     self.get_logger().info(" E[1][2] = " + str(self.E[1][2]))
-
+"""
                     if self.pid_reference_counter > 0:
-                        # while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.loop_break_condition(self.actual_position[2]))):
-                        while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.orientation_check_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_check_minimum))):
+                        #pass
+                        while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.loop_break_condition(self.actual_position[2]))):
+                        #while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.orientation_check_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_check_minimum))):
                             self.time_check_inter = time.time()
 
 
@@ -352,12 +362,15 @@ class PidPilotSenior(Node):
                         # if self.orientation_reference_minimum < 0:
                         #     self.orientation_reference_minimum = self.orientation_reference_minimum + (2 * np.pi)
 
-                        # while(not self.loop_break_condition(self.position[self.pid_reference_counter][2])):
-                        while(not (self.orientation_reference_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_reference_minimum))):
-                            self.get_logger().info(" orientation_reference_maximum" + str(self.orientation_reference_maximum))
-                            self.get_logger().info("orientation_reference_minimum= " + str(self.orientation_reference_minimum))
-                            self.get_logger().info("actual_position[2] = " + str(self.actual_position[2]))
-                            self.get_logger().info("first loop correcting orientation")
+                        while(not self.loop_break_condition(self.position[self.pid_reference_counter][2])):
+                        #while(not (self.orientation_reference_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_reference_minimum))):
+                            self.get_logger().info("reference orientation" + str(self.position[self.pid_reference_counter][2]/np.pi))
+                            #self.get_logger().info("orientation_reference_maximum" + str(self.orientation_reference_maximum))
+                            #self.get_logger().info("orientation_reference_minimum= " + str(self.orientation_reference_minimum))
+                            self.get_logger().info("actual_position[2] = " + str(self.actual_position[2]/np.pi))
+                            #self.get_logger().info("first loop correcting orientation")
+                            self.get_logger().info("x diff" + str(self.path_pid[1][0] - self.path_pid[0][0]))
+                            self.get_logger().info("y diff" + str(- self.path_pid[1][1] + self.path_pid[0][1]))
 
                     self.pid_reference_counter = self.pid_reference_counter + 1
 
