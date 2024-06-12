@@ -52,7 +52,7 @@ class PidPilotSenior(Node):
         self.acceleration = []
         
         # PID variables
-        self.Kp = 0.5
+        self.Kp = 100
         self.Ki = 0
         self.Kd = 0
         self.Kp_theta = 0.5
@@ -179,13 +179,13 @@ class PidPilotSenior(Node):
                 self.orientation_reference_minimum = self.orientation_reference_minimum + (2 * np.pi)
                 self.boundary_flag = 1
 
-        self.get_logger().info("reference orientation" + str(self.position[self.pid_reference_counter][2]/np.pi))
+        #self.get_logger().info("reference orientation" + str(self.position[self.pid_reference_counter][2]/np.pi))
         #self.get_logger().info("orientation_reference_maximum" + str(self.orientation_reference_maximum))
         #self.get_logger().info("orientation_reference_minimum= " + str(self.orientation_reference_minimum))
-        self.get_logger().info("actual_position[2] = " + str(self.actual_position[2]/np.pi))
+        #self.get_logger().info("actual_position[2] = " + str(self.actual_position[2]/np.pi))
         #self.get_logger().info("first loop correcting orientation")
-        self.get_logger().info("x diff" + str(self.path_pid[1][0] - self.path_pid[0][0]))
-        self.get_logger().info("y diff" + str(- self.path_pid[1][1] + self.path_pid[0][1]))
+        #self.get_logger().info("x diff" + str(self.path_pid[1][0] - self.path_pid[0][0]))
+        #self.get_logger().info("y diff" + str(- self.path_pid[1][1] + self.path_pid[0][1]))
 
         if self.boundary_flag == 0:
             return (self.actual_position[2] < self.orientation_reference_maximum) and (self.actual_position[2] > self.orientation_reference_minimum)
@@ -327,31 +327,32 @@ class PidPilotSenior(Node):
                     self.servo_motor_right.ChangeDutyCycle(self.Phi_dot_R_act)
 
                     self.get_logger().info("counter number " + str(self.pid_reference_counter))
-                    #self.get_logger().info("Va = " + str(self.Va))
-                    #self.get_logger().info("Theta_dot = " + str(self.Theta_dot))
-                    #self.get_logger().info("instantaneous_position_data = " + str(self.instantaneous_position_data))
-                    #self.get_logger().info("x error = " + str(self.E[1][0]))
-                    #self.get_logger().info("y error = " + str(self.E[1][1]))
+                    self.get_logger().info("Va = " + str(self.Va))
+                    self.get_logger().info("Theta_dot = " + str(self.Theta_dot))
+                    self.get_logger().info("instantaneous_position_data = " + str(self.instantaneous_position_data))
+                    self.get_logger().info("x error = " + str(self.E[1][0]))
+                    self.get_logger().info("y error = " + str(self.E[1][1]))
                     self.get_logger().info("theta error = " + str(self.E[1][2]))
-                    #self.get_logger().info("theta dot = " + str(self.Theta_dot))
-                    #self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
-                    #self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
-                    #self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
-                    #self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
+                    self.get_logger().info("theta dot = " + str(self.Theta_dot))
+                    self.get_logger().info("PHI dot L = " + str(self.Phi_dot_L))
+                    self.get_logger().info("PHI dot R = " + str(self.Phi_dot_R))
+                    self.get_logger().info("DUTY cycle LEFT = " + str(self.Phi_dot_L_act))
+                    self.get_logger().info("DUTY cycle RIGHT = " + str(self.Phi_dot_R_act))
 
 
-                    """if ((self.actual_position[:1] == self.position_check)):
+                    if ((self.actual_position[:1] == self.position_check)):
                         self.get_logger().info(" position check passed")
 
                     if (-0.5  >= self.E[1][2] or self.E[1][2]>= 0.5):
                         self.get_logger().info("orientation check passed")
                     self.get_logger().info(" E[1][2] = " + str(self.E[1][2]))
-"""
+
                     if self.pid_reference_counter > 0:
                         #pass
-                        while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.loop_break_condition(self.actual_position[2]))):
-                        #while(((self.time_check_inter - self.time_check_start) < 5) and (self.actual_position[:1] == self.position_check) and (self.orientation_check_maximum > self.actual_position[2] or self.actual_position[2] > (self.orientation_check_minimum))):
+                        #while(((self.time_check_inter - self.time_check_start) < 5) and ( self.actual_position[:1] == self.position_check ) and (self.loop_break_condition(self.actual_position[2]))):
+                        while(self.actual_position[:1] == self.position_check):
                             self.time_check_inter = time.time()
+                            #self.get_logger().info(" inside while loop")
 
 
                     if self.pid_reference_counter == 0:  
