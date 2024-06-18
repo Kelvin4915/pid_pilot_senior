@@ -1,4 +1,4 @@
-### Vision-Based Dynamic Warehouse Automation using Swarm Robotics
+### Vision-Based Dynamic Warehouse Automation using Swarm Robotics: ROBOT SECTION
 
 Inspired by Amazon's Pegasus robots used for warehouse management, this project aims to employ a swarm of robots to pick up various objects and place them at different destinations based on situational requirements. A single global camera provides feedback to localize the robots, objects, and destinations.
 
